@@ -13,6 +13,11 @@ namespace Test_1
         private int protein;
         private int fat;
 
+        //public string Ten { get; set; }
+        //public int Carbs { get; set; }
+        //public int Protein { get; set; }
+        //public int Fat { get; set; }
+
         //Hàm getter, setter
         public string Ten { get => ten; set => ten = value; }
         public int Carbs { get => carbs; set => carbs = value; }
@@ -20,7 +25,13 @@ namespace Test_1
         public int Fat { get => fat; set => fat = value; }
 
         //hàm khởi tạo
-        public CheDoAn() { }
+        public CheDoAn(string Ten, int Carbs, int Protein, int Fat)
+        {
+            ten = Ten;
+            carbs = Carbs;
+            protein = Protein;
+            fat = Fat;
+        }
 
     }
 }
