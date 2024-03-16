@@ -1,0 +1,37 @@
+D:\projectC#\Test_1\bin\Debug\Test_1.exe.config
+D:\projectC#\Test_1\bin\Debug\Test_1.exe
+D:\projectC#\Test_1\bin\Debug\Test_1.pdb
+D:\projectC#\Test_1\bin\Debug\FontAwesome.Sharp.dll
+D:\projectC#\Test_1\obj\Debug\Test_1.csproj.AssemblyReference.cache
+D:\projectC#\Test_1\obj\Debug\Test_1.Form1.resources
+D:\projectC#\Test_1\obj\Debug\Test_1.Properties.Resources.resources
+D:\projectC#\Test_1\obj\Debug\Test_1.csproj.GenerateResource.cache
+D:\projectC#\Test_1\obj\Debug\Test_1.csproj.CoreCompileInputs.cache
+D:\projectC#\Test_1\obj\Debug\Test_1.csproj.CopyComplete
+D:\projectC#\Test_1\obj\Debug\Test_1.exe
+D:\projectC#\Test_1\obj\Debug\Test_1.pdb
+D:\projectC#\Test_1\bin\Debug\CircularProgressBar.dll
+D:\projectC#\Test_1\bin\Debug\WinFormAnimation.dll
+D:\projectC#\Test_1\bin\Debug\CircularProgressBar.xml
+D:\projectC#\Test_1\obj\Debug\Test_1.DairyForm.resources
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\Test_1\obj\Debug\Test_1.csproj.AssemblyReference.cache
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\Test_1\obj\Debug\Test_1.Form1.resources
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\Test_1\obj\Debug\Test_1.Properties.Resources.resources
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\Test_1\obj\Debug\Test_1.csproj.GenerateResource.cache
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\Test_1\obj\Debug\Test_1.csproj.CoreCompileInputs.cache
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\Test_1\obj\Debug\Test_1.exe
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\Test_1\obj\Debug\Test_1.pdb
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\Test_1\bin\Debug\Test_1.exe.config
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\Test_1\bin\Debug\Test_1.exe
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\Test_1\bin\Debug\Test_1.pdb
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\Test_1\bin\Debug\CircularProgressBar.dll
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\Test_1\bin\Debug\FontAwesome.Sharp.dll
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\Test_1\bin\Debug\WinFormAnimation.dll
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\Test_1\bin\Debug\CircularProgressBar.xml
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\Test_1\obj\Debug\Test_1.csproj.Up2Date
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\Test_1\obj\Debug\Test_1.Calculation.resources
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\Test_1\obj\Debug\Macro.FoodnDrink.resources
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\Test_1\obj\Debug\Test_1.Macro.resources
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\Test_1\obj\Debug\Test_1.FnDButton.resources
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\Test_1\obj\Debug\Test_1.Welcome.resources
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\Test_1\obj\Debug\Test_1.MacroButton.resources
