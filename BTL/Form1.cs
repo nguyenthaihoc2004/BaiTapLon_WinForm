@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Vận_động;
 
 namespace Test_1
 {
@@ -85,6 +86,12 @@ namespace Test_1
         private void imageLogo_Click(object sender, EventArgs e)
         {
             panelBody1.Controls.Clear();
+        }
+
+        private void WorkOut_Click(object sender, EventArgs e)
+        {
+            panelBody1.Controls.Clear();
+            OpenchildForm(new vanDong());
         }
     }
 }

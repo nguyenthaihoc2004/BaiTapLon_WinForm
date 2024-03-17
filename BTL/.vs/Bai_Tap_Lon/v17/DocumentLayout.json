@@ -1,0 +1,510 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\moremenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|solutionrelative:moremenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\foodndrink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|solutionrelative:foodndrink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|d:\\thuy loi university\\lap trinh windows\\baitaplon\\baitaplon_winform\\btl\\moremenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|solutionrelative:moremenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\fndbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|solutionrelative:fndbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\fndbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|solutionrelative:fndbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\foodndrink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|solutionrelative:foodndrink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\foodndrink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|solutionrelative:foodndrink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|solutionrelative:welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|solutionrelative:welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\fndbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|solutionrelative:fndbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\fndbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|solutionrelative:fndbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\foodndrink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|solutionrelative:foodndrink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\macro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|solutionrelative:macro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\macro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|solutionrelative:macro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\vandong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|solutionrelative:vandong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\vandong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|solutionrelative:vandong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\thucdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|solutionrelative:thucdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\macro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|solutionrelative:macro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\macro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|solutionrelative:macro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\thucdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|solutionrelative:thucdon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\chedoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|solutionrelative:chedoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\macrobutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Bai_Tap_Lon.csproj|solutionrelative:macrobutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\macrobutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|solutionrelative:macrobutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\calculation.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|solutionrelative:calculation.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\calculation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|solutionrelative:calculation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\calculation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|solutionrelative:calculation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8704175C-3A84-4B43-99F2-DD7E4A9CC771}|Test_1.csproj|solutionrelative:button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MoreMenu.cs [Design]",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\MoreMenu.cs",
+              "RelativeDocumentMoniker": "MoreMenu.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\MoreMenu.cs [Design]",
+              "RelativeToolTip": "MoreMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T08:11:04.685Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FoodnDrink.cs",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\FoodnDrink.cs",
+              "RelativeDocumentMoniker": "FoodnDrink.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\FoodnDrink.cs",
+              "RelativeToolTip": "FoodnDrink.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAIBJwBsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T08:09:41.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MoreMenu.cs",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\MoreMenu.cs",
+              "RelativeDocumentMoniker": "MoreMenu.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\MoreMenu.cs",
+              "RelativeToolTip": "MoreMenu.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T08:05:41.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T07:57:29.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FnDButton.cs",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\FnDButton.cs",
+              "RelativeDocumentMoniker": "FnDButton.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\FnDButton.cs",
+              "RelativeToolTip": "FnDButton.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwDEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T07:59:26.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "VanDong.cs [Design]",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\VanDong.cs",
+              "RelativeDocumentMoniker": "VanDong.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\VanDong.cs [Design]",
+              "RelativeToolTip": "VanDong.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T07:58:38.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "VanDong.cs",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\VanDong.cs",
+              "RelativeDocumentMoniker": "VanDong.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\VanDong.cs",
+              "RelativeToolTip": "VanDong.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T07:58:31.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ThucDon.cs",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\ThucDon.cs",
+              "RelativeDocumentMoniker": "ThucDon.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\ThucDon.cs",
+              "RelativeToolTip": "ThucDon.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T07:24:19.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FoodnDrink.cs [Design]",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\FoodnDrink.cs",
+              "RelativeDocumentMoniker": "FoodnDrink.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\FoodnDrink.cs [Design]",
+              "RelativeToolTip": "FoodnDrink.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T09:34:59.043Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T09:34:47.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CheDoAn.cs",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\CheDoAn.cs",
+              "RelativeDocumentMoniker": "CheDoAn.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\CheDoAn.cs",
+              "RelativeToolTip": "CheDoAn.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBoAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T09:34:21.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Macro.cs",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\Macro.cs",
+              "RelativeDocumentMoniker": "Macro.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\Macro.cs",
+              "RelativeToolTip": "Macro.cs",
+              "ViewState": "AQIAAIMAAAAAAAAAAAAmwBkBAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T09:34:22.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Macro.cs [Design]",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\Macro.cs",
+              "RelativeDocumentMoniker": "Macro.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\Macro.cs [Design]",
+              "RelativeToolTip": "Macro.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T09:34:22.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "MacroButton.cs",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\MacroButton.cs",
+              "RelativeDocumentMoniker": "MacroButton.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\MacroButton.cs",
+              "RelativeToolTip": "MacroButton.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAA+wCkAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T09:34:22.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FnDButton.cs [Design]",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\FnDButton.cs",
+              "RelativeDocumentMoniker": "FnDButton.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\FnDButton.cs [Design]",
+              "RelativeToolTip": "FnDButton.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T09:34:22.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Welcome.cs [Design]",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\Welcome.cs",
+              "RelativeDocumentMoniker": "Welcome.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\Welcome.cs [Design]",
+              "RelativeToolTip": "Welcome.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T09:34:22.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "button.cs",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\button.cs",
+              "RelativeDocumentMoniker": "button.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\button.cs",
+              "RelativeToolTip": "button.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T09:34:22.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "MacroButton.cs",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\MacroButton.cs",
+              "RelativeDocumentMoniker": "MacroButton.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\MacroButton.cs",
+              "RelativeToolTip": "MacroButton.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAuwCkAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T09:34:22.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-16T09:34:22.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\dungs\\Documents\\GitHub\\BaiTapLon_WinForm\\BTL\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-16T09:34:22.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Welcome.cs [Design]",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\Welcome.cs",
+              "RelativeDocumentMoniker": "Welcome.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\Test_1\\Welcome.cs [Design]",
+              "RelativeToolTip": "..\\..\\Test_1\\Welcome.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T09:34:22.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FnDButton.cs [Design]",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\FnDButton.cs",
+              "RelativeDocumentMoniker": "FnDButton.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\Test_1\\FnDButton.cs [Design]",
+              "RelativeToolTip": "..\\..\\Test_1\\FnDButton.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T09:34:22.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Macro.cs [Design]",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\Macro.cs",
+              "RelativeDocumentMoniker": "Macro.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\Test_1\\Macro.cs [Design]",
+              "RelativeToolTip": "..\\..\\Test_1\\Macro.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-16T09:34:22.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FoodnDrink.cs",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\FoodnDrink.cs",
+              "RelativeDocumentMoniker": "FoodnDrink.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\FoodnDrink.cs",
+              "RelativeToolTip": "FoodnDrink.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAAABsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-16T09:34:22.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FnDButton.cs",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\FnDButton.cs",
+              "RelativeDocumentMoniker": "FnDButton.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\FnDButton.cs",
+              "RelativeToolTip": "FnDButton.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAuwA0AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T09:34:22.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Macro.cs",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\Macro.cs",
+              "RelativeDocumentMoniker": "Macro.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\Macro.cs",
+              "RelativeToolTip": "Macro.cs",
+              "ViewState": "AQIAAIMAAAAAAAAAAAAmwBkBAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-16T09:34:22.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Calculation.cs",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\Calculation.cs",
+              "RelativeDocumentMoniker": "Calculation.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\Calculation.cs",
+              "RelativeToolTip": "Calculation.cs",
+              "ViewState": "AQIAAEIBAAAAAAAAAAAuwE8BAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-16T09:34:22.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FoodnDrink.cs [Design]",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\FoodnDrink.cs",
+              "RelativeDocumentMoniker": "FoodnDrink.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\Test_1\\FoodnDrink.cs [Design]",
+              "RelativeToolTip": "..\\..\\Test_1\\FoodnDrink.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-16T09:34:22.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Calculation.Designer.cs",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\Calculation.Designer.cs",
+              "RelativeDocumentMoniker": "Calculation.Designer.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\Calculation.Designer.cs",
+              "RelativeToolTip": "Calculation.Designer.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAMwC8AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001384|",
+              "WhenOpened": "2024-03-16T09:34:22.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Calculation.cs [Design]",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\Calculation.cs",
+              "RelativeDocumentMoniker": "Calculation.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\Test_1\\Calculation.cs [Design]",
+              "RelativeToolTip": "..\\..\\Test_1\\Calculation.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
+              "WhenOpened": "2024-03-16T09:34:22.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ThucDon.cs",
+              "DocumentMoniker": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\ThucDon.cs",
+              "RelativeDocumentMoniker": "ThucDon.cs",
+              "ToolTip": "D:\\Thuy Loi University\\Lap trinh Windows\\Baitaplon\\BaiTapLon_WinForm\\BTL\\ThucDon.cs",
+              "RelativeToolTip": "ThucDon.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000587|",
+              "WhenOpened": "2024-03-16T09:34:22.316Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

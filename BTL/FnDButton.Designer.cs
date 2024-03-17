@@ -42,8 +42,8 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.ThucDon, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.nhatKy, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.ThucDon, 1, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(301, 222);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
@@ -72,6 +72,7 @@
             this.ThucDon.Text = "Thực đơn";
             this.ThucDon.TextColor = System.Drawing.Color.White;
             this.ThucDon.UseVisualStyleBackColor = false;
+            this.ThucDon.Click += new System.EventHandler(this.ThucDon_Click);
             // 
             // nhatKy
             // 

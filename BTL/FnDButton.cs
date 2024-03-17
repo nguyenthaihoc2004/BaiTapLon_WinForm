@@ -1,4 +1,5 @@
 ﻿using Macro;
+using Menu;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,7 @@ namespace Test_1
         public FnDButton()
         {
             InitializeComponent();
+
         }
         private Form currentFormchild;
 
@@ -46,7 +48,28 @@ namespace Test_1
 
         private void FnDButton_Load(object sender, EventArgs e)
         {
+        }
 
+        private void ThucDon_Click(object sender, EventArgs e)
+        {
+            Form currentForm = this;
+            Panel parentPanel = (Panel)currentForm.Parent;
+
+            // Tạo một thể hiện của Form2
+           MoreMenu moremenu = new MoreMenu();
+
+            // Thiết lập Parent của FnDbutton là panel
+            moremenu.TopLevel = false;
+            moremenu.Parent = parentPanel;
+            moremenu.FormBorderStyle = FormBorderStyle.None; // đóng dấu x và mở rộng của form con
+            moremenu.Dock = DockStyle.Fill;
+
+            // Đặt kích thước và vị trí của Form2 để nó đè chính xác lên form hiện tại
+            moremenu.Size = currentForm.Size;
+            moremenu.Location = currentForm.Location;
+            currentForm.Hide();
+            // Hiển thị Form2 và ẩn form hiện tại
+            moremenu.Show();
         }
     }
 }

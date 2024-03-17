@@ -29,24 +29,24 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.panelLogo = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.labelHome = new System.Windows.Forms.Label();
+            this.panelBody1 = new System.Windows.Forms.Panel();
+            this.iconPictureBoxHome = new FontAwesome.Sharp.IconPictureBox();
             this.iconBtnuser = new FontAwesome.Sharp.IconButton();
             this.WorkOut = new FontAwesome.Sharp.IconButton();
             this.Chart = new FontAwesome.Sharp.IconButton();
             this.AddFood = new FontAwesome.Sharp.IconButton();
             this.MacroSplit = new FontAwesome.Sharp.IconButton();
             this.Caculate = new FontAwesome.Sharp.IconButton();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.imageLogo = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.iconPictureBoxHome = new FontAwesome.Sharp.IconPictureBox();
-            this.labelHome = new System.Windows.Forms.Label();
-            this.panelBody1 = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imageLogo)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBoxHome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -66,6 +66,78 @@
             this.panelMenu.Size = new System.Drawing.Size(187, 753);
             this.panelMenu.TabIndex = 0;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
+            // 
+            // panelLogo
+            // 
+            this.panelLogo.Controls.Add(this.button1);
+            this.panelLogo.Controls.Add(this.imageLogo);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(2);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(187, 108);
+            this.panelLogo.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(184, 55);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(1195, 682);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.panel1.Controls.Add(this.iconPictureBoxHome);
+            this.panel1.Controls.Add(this.labelHome);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(187, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1095, 58);
+            this.panel1.TabIndex = 1;
+            // 
+            // labelHome
+            // 
+            this.labelHome.AutoSize = true;
+            this.labelHome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.labelHome.Location = new System.Drawing.Point(75, 22);
+            this.labelHome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelHome.Name = "labelHome";
+            this.labelHome.Size = new System.Drawing.Size(44, 16);
+            this.labelHome.TabIndex = 1;
+            this.labelHome.Text = "Home";
+            this.labelHome.Click += new System.EventHandler(this.labelHome_Click);
+            // 
+            // panelBody1
+            // 
+            this.panelBody1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelBody1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panelBody1.Location = new System.Drawing.Point(184, 55);
+            this.panelBody1.Name = "panelBody1";
+            this.panelBody1.Size = new System.Drawing.Size(1098, 698);
+            this.panelBody1.TabIndex = 2;
+            // 
+            // iconPictureBoxHome
+            // 
+            this.iconPictureBoxHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.iconPictureBoxHome.ForeColor = System.Drawing.Color.Turquoise;
+            this.iconPictureBoxHome.IconChar = FontAwesome.Sharp.IconChar.House;
+            this.iconPictureBoxHome.IconColor = System.Drawing.Color.Turquoise;
+            this.iconPictureBoxHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBoxHome.IconSize = 42;
+            this.iconPictureBoxHome.Location = new System.Drawing.Point(15, 8);
+            this.iconPictureBoxHome.Margin = new System.Windows.Forms.Padding(2);
+            this.iconPictureBoxHome.Name = "iconPictureBoxHome";
+            this.iconPictureBoxHome.Size = new System.Drawing.Size(56, 42);
+            this.iconPictureBoxHome.TabIndex = 2;
+            this.iconPictureBoxHome.TabStop = false;
+            this.iconPictureBoxHome.Click += new System.EventHandler(this.iconPictureBoxHome_Click);
             // 
             // iconBtnuser
             // 
@@ -110,6 +182,7 @@
             this.WorkOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.WorkOut.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.WorkOut.UseVisualStyleBackColor = true;
+            this.WorkOut.Click += new System.EventHandler(this.WorkOut_Click);
             // 
             // Chart
             // 
@@ -203,27 +276,6 @@
             this.Caculate.UseVisualStyleBackColor = true;
             this.Caculate.Click += new System.EventHandler(this.Caculate_Click);
             // 
-            // panelLogo
-            // 
-            this.panelLogo.Controls.Add(this.button1);
-            this.panelLogo.Controls.Add(this.imageLogo);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Margin = new System.Windows.Forms.Padding(2);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(187, 108);
-            this.panelLogo.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(184, 55);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(1195, 682);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // imageLogo
             // 
             this.imageLogo.Image = global::Test_1.Properties.Resources.logo_winform_bw;
@@ -235,57 +287,6 @@
             this.imageLogo.TabIndex = 1;
             this.imageLogo.TabStop = false;
             this.imageLogo.Click += new System.EventHandler(this.imageLogo_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.panel1.Controls.Add(this.iconPictureBoxHome);
-            this.panel1.Controls.Add(this.labelHome);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(187, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1095, 58);
-            this.panel1.TabIndex = 1;
-            // 
-            // iconPictureBoxHome
-            // 
-            this.iconPictureBoxHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.iconPictureBoxHome.ForeColor = System.Drawing.Color.Turquoise;
-            this.iconPictureBoxHome.IconChar = FontAwesome.Sharp.IconChar.House;
-            this.iconPictureBoxHome.IconColor = System.Drawing.Color.Turquoise;
-            this.iconPictureBoxHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBoxHome.IconSize = 42;
-            this.iconPictureBoxHome.Location = new System.Drawing.Point(15, 8);
-            this.iconPictureBoxHome.Margin = new System.Windows.Forms.Padding(2);
-            this.iconPictureBoxHome.Name = "iconPictureBoxHome";
-            this.iconPictureBoxHome.Size = new System.Drawing.Size(56, 42);
-            this.iconPictureBoxHome.TabIndex = 2;
-            this.iconPictureBoxHome.TabStop = false;
-            this.iconPictureBoxHome.Click += new System.EventHandler(this.iconPictureBoxHome_Click);
-            // 
-            // labelHome
-            // 
-            this.labelHome.AutoSize = true;
-            this.labelHome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelHome.Location = new System.Drawing.Point(75, 22);
-            this.labelHome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelHome.Name = "labelHome";
-            this.labelHome.Size = new System.Drawing.Size(44, 16);
-            this.labelHome.TabIndex = 1;
-            this.labelHome.Text = "Home";
-            this.labelHome.Click += new System.EventHandler(this.labelHome_Click);
-            // 
-            // panelBody1
-            // 
-            this.panelBody1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelBody1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.panelBody1.Location = new System.Drawing.Point(184, 55);
-            this.panelBody1.Name = "panelBody1";
-            this.panelBody1.Size = new System.Drawing.Size(1098, 698);
-            this.panelBody1.TabIndex = 2;
             // 
             // Form1
             // 
@@ -300,10 +301,10 @@
             this.Text = "Form1";
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imageLogo)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBoxHome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageLogo)).EndInit();
             this.ResumeLayout(false);
 
         }

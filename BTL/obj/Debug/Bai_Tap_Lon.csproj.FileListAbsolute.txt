@@ -19,3 +19,26 @@ C:\Users\dungs\Documents\GitHub\BaiTapLon_WinForm\BTL\obj\Debug\Bai_Tap_Lon.cspr
 C:\Users\dungs\Documents\GitHub\BaiTapLon_WinForm\BTL\obj\Debug\Bai_Tap_Lon.csproj.CopyComplete
 C:\Users\dungs\Documents\GitHub\BaiTapLon_WinForm\BTL\obj\Debug\Test_1.exe
 C:\Users\dungs\Documents\GitHub\BaiTapLon_WinForm\BTL\obj\Debug\Test_1.pdb
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\BaiTapLon_WinForm\BTL\bin\Debug\Test_1.exe.config
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\BaiTapLon_WinForm\BTL\bin\Debug\Test_1.exe
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\BaiTapLon_WinForm\BTL\bin\Debug\Test_1.pdb
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\BaiTapLon_WinForm\BTL\bin\Debug\CircularProgressBar.dll
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\BaiTapLon_WinForm\BTL\bin\Debug\FontAwesome.Sharp.dll
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\BaiTapLon_WinForm\BTL\bin\Debug\WinFormAnimation.dll
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\BaiTapLon_WinForm\BTL\bin\Debug\CircularProgressBar.xml
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\BaiTapLon_WinForm\BTL\obj\Debug\Bai_Tap_Lon.csproj.AssemblyReference.cache
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\BaiTapLon_WinForm\BTL\obj\Debug\Test_1.Calculation.resources
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\BaiTapLon_WinForm\BTL\obj\Debug\Macro.FoodnDrink.resources
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\BaiTapLon_WinForm\BTL\obj\Debug\Test_1.Form1.resources
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\BaiTapLon_WinForm\BTL\obj\Debug\Test_1.Macro.resources
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\BaiTapLon_WinForm\BTL\obj\Debug\Test_1.FnDButton.resources
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\BaiTapLon_WinForm\BTL\obj\Debug\Test_1.MacroButton.resources
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\BaiTapLon_WinForm\BTL\obj\Debug\Test_1.Properties.Resources.resources
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\BaiTapLon_WinForm\BTL\obj\Debug\Test_1.Welcome.resources
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\BaiTapLon_WinForm\BTL\obj\Debug\Bai_Tap_Lon.csproj.GenerateResource.cache
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\BaiTapLon_WinForm\BTL\obj\Debug\Bai_Tap_Lon.csproj.CoreCompileInputs.cache
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\BaiTapLon_WinForm\BTL\obj\Debug\Bai_Tap_.EA58E64B.Up2Date
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\BaiTapLon_WinForm\BTL\obj\Debug\Test_1.exe
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\BaiTapLon_WinForm\BTL\obj\Debug\Test_1.pdb
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\BaiTapLon_WinForm\BTL\obj\Debug\Vận_động.vanDong.resources
+D:\Thuy Loi University\Lap trinh Windows\Baitaplon\BaiTapLon_WinForm\BTL\obj\Debug\Menu.MoreMenu.resources
