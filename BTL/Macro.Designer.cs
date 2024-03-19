@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -74,9 +74,9 @@
             this.ttTrucl = new System.Windows.Forms.Button();
             this.cbbTuychon = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.trbCalo = new System.Windows.Forms.TrackBar();
             this.tbCalo = new System.Windows.Forms.TextBox();
             this.btCongcl = new System.Windows.Forms.Button();
+            this.trbCalo = new System.Windows.Forms.TrackBar();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbTongpt = new System.Windows.Forms.Label();
@@ -180,7 +180,7 @@
             this.trackBar3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.trackBar3.Location = new System.Drawing.Point(202, 280);
-            this.trackBar3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.trackBar3.Margin = new System.Windows.Forms.Padding(6);
             this.trackBar3.Maximum = 100;
             this.trackBar3.Name = "trackBar3";
             this.trackBar3.Size = new System.Drawing.Size(453, 90);
@@ -192,7 +192,7 @@
             this.trackBar2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.trackBar2.Location = new System.Drawing.Point(202, 143);
-            this.trackBar2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.trackBar2.Margin = new System.Windows.Forms.Padding(6);
             this.trackBar2.Maximum = 100;
             this.trackBar2.Name = "trackBar2";
             this.trackBar2.Size = new System.Drawing.Size(453, 90);
@@ -204,7 +204,7 @@
             this.trackBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.trackBar1.Location = new System.Drawing.Point(202, 6);
-            this.trackBar1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.trackBar1.Margin = new System.Windows.Forms.Padding(6);
             this.trackBar1.Maximum = 100;
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(453, 90);
@@ -232,7 +232,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btTruC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btTruC.Location = new System.Drawing.Point(140, 6);
-            this.btTruC.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btTruC.Margin = new System.Windows.Forms.Padding(6);
             this.btTruC.Name = "btTruC";
             this.btTruC.Size = new System.Drawing.Size(50, 44);
             this.btTruC.TabIndex = 37;
@@ -246,7 +246,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btTruP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btTruP.Location = new System.Drawing.Point(140, 143);
-            this.btTruP.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btTruP.Margin = new System.Windows.Forms.Padding(6);
             this.btTruP.Name = "btTruP";
             this.btTruP.Size = new System.Drawing.Size(50, 44);
             this.btTruP.TabIndex = 38;
@@ -260,7 +260,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btTruF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btTruF.Location = new System.Drawing.Point(140, 280);
-            this.btTruF.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btTruF.Margin = new System.Windows.Forms.Padding(6);
             this.btTruF.Name = "btTruF";
             this.btTruF.Size = new System.Drawing.Size(50, 44);
             this.btTruF.TabIndex = 39;
@@ -274,7 +274,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btCongC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCongC.Location = new System.Drawing.Point(667, 6);
-            this.btCongC.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btCongC.Margin = new System.Windows.Forms.Padding(6);
             this.btCongC.Name = "btCongC";
             this.btCongC.Size = new System.Drawing.Size(52, 44);
             this.btCongC.TabIndex = 40;
@@ -288,7 +288,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btCongP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCongP.Location = new System.Drawing.Point(667, 143);
-            this.btCongP.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btCongP.Margin = new System.Windows.Forms.Padding(6);
             this.btCongP.Name = "btCongP";
             this.btCongP.Size = new System.Drawing.Size(52, 44);
             this.btCongP.TabIndex = 41;
@@ -302,7 +302,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btCongF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCongF.Location = new System.Drawing.Point(667, 280);
-            this.btCongF.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btCongF.Margin = new System.Windows.Forms.Padding(6);
             this.btCongF.Name = "btCongF";
             this.btCongF.Size = new System.Drawing.Size(52, 44);
             this.btCongF.TabIndex = 42;
@@ -313,19 +313,19 @@
             // chart1
             // 
             this.chart1.BackColor = System.Drawing.Color.Transparent;
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
             this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(0, 0);
-            this.chart1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.chart1.Margin = new System.Windows.Forms.Padding(6);
             this.chart1.Name = "chart1";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chart1.Series.Add(series3);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(818, 531);
             this.chart1.TabIndex = 48;
             this.chart1.Text = "chart1";
@@ -338,7 +338,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.btLuu, 2);
             this.btLuu.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btLuu.Location = new System.Drawing.Point(731, 417);
-            this.btLuu.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btLuu.Margin = new System.Windows.Forms.Padding(6);
             this.btLuu.Name = "btLuu";
             this.btLuu.Size = new System.Drawing.Size(240, 66);
             this.btLuu.TabIndex = 53;
@@ -353,7 +353,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btThem.Location = new System.Drawing.Point(6, 145);
-            this.btThem.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btThem.Margin = new System.Windows.Forms.Padding(6);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(309, 59);
             this.btThem.TabIndex = 50;
@@ -451,7 +451,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbC.Location = new System.Drawing.Point(164, 6);
-            this.tbC.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbC.Margin = new System.Windows.Forms.Padding(6);
             this.tbC.Name = "tbC";
             this.tbC.Size = new System.Drawing.Size(138, 31);
             this.tbC.TabIndex = 58;
@@ -463,7 +463,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbP.Location = new System.Drawing.Point(486, 6);
-            this.tbP.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbP.Margin = new System.Windows.Forms.Padding(6);
             this.tbP.Name = "tbP";
             this.tbP.Size = new System.Drawing.Size(138, 31);
             this.tbP.TabIndex = 59;
@@ -475,7 +475,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbF.Location = new System.Drawing.Point(760, 6);
-            this.tbF.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbF.Margin = new System.Windows.Forms.Padding(6);
             this.tbF.Name = "tbF";
             this.tbF.Size = new System.Drawing.Size(139, 31);
             this.tbF.TabIndex = 60;
@@ -487,7 +487,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btSua.Location = new System.Drawing.Point(327, 145);
-            this.btSua.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btSua.Margin = new System.Windows.Forms.Padding(6);
             this.btSua.Name = "btSua";
             this.btSua.Size = new System.Drawing.Size(317, 59);
             this.btSua.TabIndex = 54;
@@ -502,7 +502,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btXoa.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btXoa.Location = new System.Drawing.Point(656, 145);
-            this.btXoa.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btXoa.Margin = new System.Windows.Forms.Padding(6);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(315, 59);
             this.btXoa.TabIndex = 61;
@@ -588,7 +588,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btCustom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCustom.Location = new System.Drawing.Point(656, 76);
-            this.btCustom.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btCustom.Margin = new System.Windows.Forms.Padding(6);
             this.btCustom.Name = "btCustom";
             this.btCustom.Size = new System.Drawing.Size(315, 57);
             this.btCustom.TabIndex = 24;
@@ -617,7 +617,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbTenCDA.Location = new System.Drawing.Point(327, 76);
-            this.tbTenCDA.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbTenCDA.Margin = new System.Windows.Forms.Padding(6);
             this.tbTenCDA.Name = "tbTenCDA";
             this.tbTenCDA.Size = new System.Drawing.Size(317, 31);
             this.tbTenCDA.TabIndex = 52;
@@ -664,7 +664,7 @@
             // 
             this.btLuuTC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btLuuTC.Location = new System.Drawing.Point(327, 216);
-            this.btLuuTC.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btLuuTC.Margin = new System.Windows.Forms.Padding(6);
             this.btLuuTC.Name = "btLuuTC";
             this.btLuuTC.Size = new System.Drawing.Size(317, 62);
             this.btLuuTC.TabIndex = 62;
@@ -683,7 +683,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 134F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 135F));
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.ttTrucl, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.cbbTuychon, 1, 1);
@@ -719,7 +719,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ttTrucl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ttTrucl.Location = new System.Drawing.Point(290, 6);
-            this.ttTrucl.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.ttTrucl.Margin = new System.Windows.Forms.Padding(6);
             this.ttTrucl.Name = "ttTrucl";
             this.ttTrucl.Size = new System.Drawing.Size(78, 44);
             this.ttTrucl.TabIndex = 38;
@@ -736,7 +736,7 @@
             this.tableLayoutPanel2.SetColumnSpan(this.cbbTuychon, 2);
             this.cbbTuychon.FormattingEnabled = true;
             this.cbbTuychon.Location = new System.Drawing.Point(290, 151);
-            this.cbbTuychon.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.cbbTuychon.Margin = new System.Windows.Forms.Padding(6);
             this.cbbTuychon.Name = "cbbTuychon";
             this.cbbTuychon.Size = new System.Drawing.Size(232, 33);
             this.cbbTuychon.TabIndex = 48;
@@ -755,26 +755,13 @@
             this.label2.TabIndex = 49;
             this.label2.Text = "Tùy chọn chế độ ăn";
             // 
-            // trbCalo
-            // 
-            this.trbCalo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel2.SetColumnSpan(this.trbCalo, 2);
-            this.trbCalo.Location = new System.Drawing.Point(380, 6);
-            this.trbCalo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.trbCalo.Maximum = 5000;
-            this.trbCalo.Name = "trbCalo";
-            this.trbCalo.Size = new System.Drawing.Size(296, 90);
-            this.trbCalo.TabIndex = 25;
-            this.trbCalo.ValueChanged += new System.EventHandler(this.trbCalo_ValueChanged);
-            // 
             // tbCalo
             // 
             this.tbCalo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tbCalo.Location = new System.Drawing.Point(776, 6);
-            this.tbCalo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tbCalo.Margin = new System.Windows.Forms.Padding(6);
             this.tbCalo.Name = "tbCalo";
             this.tbCalo.Size = new System.Drawing.Size(123, 31);
             this.tbCalo.TabIndex = 43;
@@ -787,13 +774,26 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btCongcl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCongcl.Location = new System.Drawing.Point(688, 6);
-            this.btCongcl.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btCongcl.Margin = new System.Windows.Forms.Padding(6);
             this.btCongcl.Name = "btCongcl";
             this.btCongcl.Size = new System.Drawing.Size(76, 44);
             this.btCongcl.TabIndex = 41;
             this.btCongcl.Text = "+";
             this.btCongcl.UseVisualStyleBackColor = true;
             this.btCongcl.Click += new System.EventHandler(this.btCongcl_Click);
+            // 
+            // trbCalo
+            // 
+            this.trbCalo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.SetColumnSpan(this.trbCalo, 2);
+            this.trbCalo.Location = new System.Drawing.Point(380, 6);
+            this.trbCalo.Margin = new System.Windows.Forms.Padding(6);
+            this.trbCalo.Maximum = 5000;
+            this.trbCalo.Name = "trbCalo";
+            this.trbCalo.Size = new System.Drawing.Size(296, 90);
+            this.trbCalo.TabIndex = 25;
+            this.trbCalo.ValueChanged += new System.EventHandler(this.trbCalo_ValueChanged);
             // 
             // tableLayoutPanel5
             // 
@@ -824,7 +824,7 @@
             this.panel1.Controls.Add(this.lbTongpt);
             this.panel1.Controls.Add(this.chart1);
             this.panel1.Location = new System.Drawing.Point(6, 410);
-            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(818, 531);
             this.panel1.TabIndex = 68;
@@ -858,7 +858,7 @@
             this.ClientSize = new System.Drawing.Size(1920, 1033);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.tableLayoutPanel5);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Macro";
             this.Text = "Macro";
             this.Load += new System.EventHandler(this.Form2_Load);

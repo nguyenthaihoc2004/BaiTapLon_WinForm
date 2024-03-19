@@ -1,5 +1,6 @@
 ﻿using CircularProgressBar;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,7 @@ using System.Threading.Tasks;
 using System.Windows.Documents;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
+using System.Windows.Media.TextFormatting;
 using Test_1;
 
 namespace Macro
@@ -28,6 +30,7 @@ namespace Macro
         int TDEE = 2500;
         string check = "";
         int quaC = 0, quaP = 0, quaF = 0;
+        DataTable Menu = new DataTable();
         public FoodnDrink()
         {
             InitializeComponent();
@@ -56,6 +59,15 @@ namespace Macro
             }
         }
 
+
+        private void LoadMenu()
+        {
+            string query = string.Format("SELECT Ten As [Tên món ăn], Loai as [Loại], KhoiLuong as[Khối lượng(gr)] FROM Menu");
+            adt = new SqlDataAdapter(query, conn);
+            DataTable Menu2 = new DataTable();
+            adt.Fill(Menu2);
+            dtMenu.DataSource = Menu2;
+        }
         private void LoadDaily()
         {
             string selectQuery = string.Format("Select  Ten as [Tên món ăn], KL as [Khối lượng], Calories as [Calories], Nutrients as [Chất dinh dưỡng] from DailyMenu ");
@@ -74,7 +86,6 @@ namespace Macro
             circularProgressBar1.Value = 0;
             circularProgressBar1.Update();
             // Tạo một DataTable để chứa dữ liệu
-            DataTable Menu = new DataTable();
             labelchart.Text = "0 Calo";
             chart1.Series["Series1"].Points.AddXY("Carbs", 33.3);
             chart1.Series["Series1"].Points.AddXY("Fat", 33.3);
@@ -105,11 +116,8 @@ namespace Macro
             }
 
             //chọn 3 cột để show lên
-            query = string.Format("SELECT Ten As [Tên món ăn], Loai as [Loại], KhoiLuong as[Khối lượng(gr)] FROM Menu");
-            adt = new SqlDataAdapter(query, conn);
-            DataTable Menu2 = new DataTable();
-            adt.Fill(Menu2);
-            dtMenu.DataSource = Menu2;
+            LoadMenu();
+           
         }
 
         private void circularProgressBar1_Click(object sender, EventArgs e)
@@ -200,6 +208,7 @@ namespace Macro
             btnAdd0.Enabled = true;
             //sau khi lưu xong . clear dữ liệu
             textBox3.Text = "";
+            LoadMenu();
         }
 
         private void btnSearch_Click_1(object sender, EventArgs e)
@@ -247,6 +256,26 @@ namespace Macro
             //cập nhật lại bảng
             LoadDaily();
             MessageBox.Show("Xóa dữ liệu thành công");
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            string search = textBox2.Text;
+            string searchQuery = string.Format("SELECT Ten As [Tên món ăn], Loai As [Loại], KhoiLuong as [Khối lượng(gr)] FROM Menu WHERE Ten LIKE N'{0}%'", search);
+            SqlDataAdapter adt = new SqlDataAdapter(searchQuery,conn);
+            DataTable dtSearch = new DataTable();
+            adt.Fill(dtSearch);
+            dtMenu.DataSource = dtSearch;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            string search = textBox1.Text;
+            string searchQuery = string.Format("SELECT Ten As [Tên món ăn], Loai As [Loại], KhoiLuong as [Khối lượng(gr)] FROM Menu WHERE Loai LIKE N'{0}%'", search);
+            SqlDataAdapter adt = new SqlDataAdapter(searchQuery, conn);
+            DataTable dtSearch = new DataTable();
+            adt.Fill(dtSearch);
+            dtMenu.DataSource = dtSearch;
         }
 
         private void dtDaily_CellClick(object sender, DataGridViewCellEventArgs e)

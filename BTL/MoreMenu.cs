@@ -95,6 +95,7 @@ namespace Menu
             ClearText();
             btnSave.Enabled = false;
             btnEdit.Enabled = btnEra.Enabled = btnSearch.Enabled = true;
+            LoadData();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -226,20 +227,11 @@ namespace Menu
         {
             if(check == "Search")
             {
-                List<ThucDon> FindList = new List<ThucDon>();
-                string TenMon = textTen.Text;
-                foreach (ThucDon monan in Menus)
-                {
-                    string tmp = monan.Name.ToLower();
-                    TenMon.ToLower();
-                    if (tmp.Contains(TenMon))
-                    {
-                        FindList.Add(monan);
-                    }
-                }
-                dt.Clear();
-                dtMenu.DataSource = null;
-                dtMenu.DataSource = FindList;
+                string search = textTen.Text;
+                string searchQuery = string.Format("Select * from Menu Where Ten Like N'{0}%'", search);
+                dt.Rows.Clear();
+                SqlDataAdapter adt = new SqlDataAdapter(searchQuery,conn);
+                adt.Fill(dt);
             }
         }
 
