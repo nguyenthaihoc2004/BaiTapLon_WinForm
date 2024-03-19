@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,16 +14,23 @@ namespace Test_1
 {
     public partial class Calculation : Form
     {
+        Form1 f = null;
+
+        private SqlConnection conn;
+
         public Calculation()
         {
             InitializeComponent();
+            f = new Form1();
+            // Gán giá trị của biến conn cho connection
+            conn = f.GetConnection();
         }
 
         int namSinh = 0;
         double Weight = 0;
         double Height = 0;
-        string Gender;
-        int CuongDo;
+        string Gender = "";
+        int CuongDo = 0;
         double BMI, BMR, TDEE;
         double hso = 0;
 
@@ -30,11 +38,6 @@ namespace Test_1
         {
            
         }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-        }
-
 
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
@@ -181,21 +184,6 @@ namespace Test_1
 
         }
 
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label21_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label24_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label22_Click(object sender, EventArgs e)
         {
 
@@ -204,98 +192,121 @@ namespace Test_1
         private void vbButton1_Click(object sender, EventArgs e)
         {
             // tính BMI
-            BMI = Weight / Math.Pow(Height / 100, 2);
-            // Tính BMR
-            if (Gender == "Nam")
-            {
-                BMR = (10 * Weight) + (6.25 * Height) - (5 * (2024 - namSinh)) + 5;
-            }
-            else BMR = (10 * Weight) + (6.25 * Height) - (5 * (2024 - namSinh)) - 161;
-            //Tính TDEE
-            TDEE = BMR * hso;
 
-            //xét BMI để phân loại
-            if (BMI <= 18.5)
+            if (namSinh == 0 || CuongDo == 0 || Height == 0 || Weight == 0 || Gender == "")
             {
-                label11.Text = "Chỉ số BMI của bạn là " + BMI.ToString("F2") + ", bạn thuộc loại cân nặng thấp";
-                //label8.Font = new Font(label1.Font, FontStyle.Bold);
-                //label9.Font = new Font(label1.Font, FontStyle.Bold);
-                label8.BackColor = Color.FromArgb(170, 167, 167);
-                label9.BackColor = Color.FromArgb(170, 167, 167);
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!!");
+                return;
             }
-            else if (BMI > 18.5 && BMI <= 24.9)
+            else
             {
-                label11.Text = "Chỉ số BMI của bạn là " + BMI.ToString("F2") + ", bạn thuộc loại bình thường";
-                //label14.Font = new Font(label1.Font, FontStyle.Bold);
-                // label15.Font = new Font(label1.Font, FontStyle.Bold);
-                label14.BackColor = Color.FromArgb(170, 167, 167);
-                label15.BackColor = Color.FromArgb(170, 167, 167);
-            }
-            else if (BMI > 24.9 && BMI <= 29.9)
-            {
-                label11.Text = "Chỉ số BMI của bạn là " + BMI.ToString("F2") + ", bạn thuộc loại tiền béo phì";
-                // label16.Font = new Font(label1.Font, FontStyle.Bold);
-                // label17.Font = new Font(label1.Font, FontStyle.Bold);
-                label16.BackColor = Color.FromArgb(170, 167, 167);
-                label17.BackColor = Color.FromArgb(170, 167, 167);
-            }
-            else if (BMI > 29.9 && BMI <= 34.9)
-            {
-                label11.Text = "Chỉ số BMI của bạn là " + BMI.ToString("F2") + ", bạn thuộc loại béo phì độ I";
-                //label18.Font = new Font(label1.Font, FontStyle.Bold);
-                // label19.Font = new Font(label1.Font, FontStyle.Bold);
-                label18.BackColor = Color.FromArgb(170, 167, 167);
-                label19.BackColor = Color.FromArgb(170, 167, 167);
-            }
-            else if (BMI > 34.9 && BMI <= 39.9)
-            {
-                label11.Text = "Chỉ số BMI của bạn là " + BMI.ToString("F2") + ", bạn thuộc loại béo phì độ II";
-                //label18.Font = new Font(label1.Font, FontStyle.Bold);
-                // label19.Font = new Font(label1.Font, FontStyle.Bold);
-                label37.BackColor = Color.FromArgb(170, 167, 167);
-                label38.BackColor = Color.FromArgb(170, 167, 167);
-            }
-            else if (BMI >= 40)
-            {
-                label11.Text = "Chỉ số BMI của bạn là " + BMI.ToString("F2") + ", bạn thuộc loại béo phì độ III";
-                //label18.Font = new Font(label1.Font, FontStyle.Bold);
-                // label19.Font = new Font(label1.Font, FontStyle.Bold);
-                label39.BackColor = Color.FromArgb(170, 167, 167);
-                label40.BackColor = Color.FromArgb(170, 167, 167);
-            }
 
-            // in ra chỉ số BMR
-            label21.Text = "Chỉ số BMR của bạn là " + BMR.ToString("F0") + " calo/ngày";
+                BMI = Weight / Math.Pow(Height / 100, 2);
+                // Tính BMR
+                if (Gender == "Nam")
+                {
+                    BMR = (10 * Weight) + (6.25 * Height) - (5 * (2024 - namSinh)) + 5;
+                }
+                else BMR = (10 * Weight) + (6.25 * Height) - (5 * (2024 - namSinh)) - 161;
+                //Tính TDEE
+                TDEE = BMR * hso;
 
-            // xét chỉ số TDEE để phân loại
+                //xét BMI để phân loại
+                if (BMI <= 18.5)
+                {
+                    label11.Text = "Chỉ số BMI của bạn là " + BMI.ToString("F2") + ", bạn thuộc loại cân nặng thấp";
+                    //label8.Font = new Font(label1.Font, FontStyle.Bold);
+                    //label9.Font = new Font(label1.Font, FontStyle.Bold);
+                    label8.BackColor = Color.FromArgb(170, 167, 167);
+                    label9.BackColor = Color.FromArgb(170, 167, 167);
+                }
+                else if (BMI > 18.5 && BMI <= 24.9)
+                {
+                    label11.Text = "Chỉ số BMI của bạn là " + BMI.ToString("F2") + ", bạn thuộc loại bình thường";
+                    //label14.Font = new Font(label1.Font, FontStyle.Bold);
+                    // label15.Font = new Font(label1.Font, FontStyle.Bold);
+                    label14.BackColor = Color.FromArgb(170, 167, 167);
+                    label15.BackColor = Color.FromArgb(170, 167, 167);
+                }
+                else if (BMI > 24.9 && BMI <= 29.9)
+                {
+                    label11.Text = "Chỉ số BMI của bạn là " + BMI.ToString("F2") + ", bạn thuộc loại tiền béo phì";
+                    // label16.Font = new Font(label1.Font, FontStyle.Bold);
+                    // label17.Font = new Font(label1.Font, FontStyle.Bold);
+                    label16.BackColor = Color.FromArgb(170, 167, 167);
+                    label17.BackColor = Color.FromArgb(170, 167, 167);
+                }
+                else if (BMI > 29.9 && BMI <= 34.9)
+                {
+                    label11.Text = "Chỉ số BMI của bạn là " + BMI.ToString("F2") + ", bạn thuộc loại béo phì độ I";
+                    //label18.Font = new Font(label1.Font, FontStyle.Bold);
+                    // label19.Font = new Font(label1.Font, FontStyle.Bold);
+                    label18.BackColor = Color.FromArgb(170, 167, 167);
+                    label19.BackColor = Color.FromArgb(170, 167, 167);
+                }
+                else if (BMI > 34.9 && BMI <= 39.9)
+                {
+                    label11.Text = "Chỉ số BMI của bạn là " + BMI.ToString("F2") + ", bạn thuộc loại béo phì độ II";
+                    //label18.Font = new Font(label1.Font, FontStyle.Bold);
+                    // label19.Font = new Font(label1.Font, FontStyle.Bold);
+                    label37.BackColor = Color.FromArgb(170, 167, 167);
+                    label38.BackColor = Color.FromArgb(170, 167, 167);
+                }
+                else if (BMI >= 40)
+                {
+                    label11.Text = "Chỉ số BMI của bạn là " + BMI.ToString("F2") + ", bạn thuộc loại béo phì độ III";
+                    //label18.Font = new Font(label1.Font, FontStyle.Bold);
+                    // label19.Font = new Font(label1.Font, FontStyle.Bold);
+                    label39.BackColor = Color.FromArgb(170, 167, 167);
+                    label40.BackColor = Color.FromArgb(170, 167, 167);
+                }
 
-            if(CuongDo == 1)
-            {
-                label27.BackColor = Color.FromArgb(170, 167, 167);
-                label28.BackColor = Color.FromArgb(170, 167, 167);
+                // in ra chỉ số BMR
+                label21.Text = "Chỉ số BMR của bạn là " + BMR.ToString("F0") + " calo/ngày";
+
+                // xét chỉ số TDEE để phân loại
+
+                if (CuongDo == 1)
+                {
+                    label27.BackColor = Color.FromArgb(170, 167, 167);
+                    label28.BackColor = Color.FromArgb(170, 167, 167);
+                }
+                if (CuongDo == 2)
+                {
+                    label29.BackColor = Color.FromArgb(170, 167, 167);
+                    label30.BackColor = Color.FromArgb(170, 167, 167);
+                }
+                if (CuongDo == 3)
+                {
+                    label31.BackColor = Color.FromArgb(170, 167, 167);
+                    label32.BackColor = Color.FromArgb(170, 167, 167);
+                }
+                if (CuongDo == 4)
+                {
+                    label33.BackColor = Color.FromArgb(170, 167, 167);
+                    label34.BackColor = Color.FromArgb(170, 167, 167);
+                }
+                if (CuongDo == 5)
+                {
+                    label35.BackColor = Color.FromArgb(170, 167, 167);
+                    label36.BackColor = Color.FromArgb(170, 167, 167);
+                }
+                label24.Text = "Chỉ số TDEE của bạn là  " + TDEE.ToString("F0") + " calo/ngày";
+
+                // Khai báo giá trị cho f để Mở hàm constructor trong form1(nếu dùng cách k có hàm Getconn)
+                //f = new Form1();
+                string BMI0 = BMI.ToString("F2");
+                BMI = Convert.ToDouble(BMI0);
+                //string query = string.Format("Insert Into UserInfor Values (N'{0}' , '{1}', '{2}', '{3}', '{4}','{5}', '{6}','{7}) ",
+                //    Gender, Convert.ToDouble(Weight), Convert.ToDouble(Height), BMI, Convert.ToInt32(BMR), Convert.ToInt32(TDEE),
+                //    namSinh, CuongDo);
+                string query = string.Format("Insert Into UserInfor Values (N'{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}')",
+                Gender, Convert.ToDouble(Weight), Convert.ToDouble(Height), BMI, Convert.ToInt32(BMR), Convert.ToInt32(TDEE),
+                namSinh, CuongDo);
+                SqlCommand cmdInsert = new SqlCommand(query, conn);
+                cmdInsert.ExecuteNonQuery();
+                conn.Close();
             }
-            if(CuongDo == 2)
-            {
-                label29.BackColor = Color.FromArgb(170, 167, 167);
-                label30.BackColor = Color.FromArgb(170, 167, 167);
-            }
-            if (CuongDo == 3)
-            {
-                label31.BackColor = Color.FromArgb(170, 167, 167);
-                label32.BackColor = Color.FromArgb(170, 167, 167);
-            }
-            if (CuongDo == 4)
-            {
-                label33.BackColor = Color.FromArgb(170, 167, 167);
-                label34.BackColor = Color.FromArgb(170, 167, 167);
-            }
-            if (CuongDo == 5)
-            {
-                label35.BackColor = Color.FromArgb(170, 167, 167);
-                label36.BackColor = Color.FromArgb(170, 167, 167);
-            }
-            label24.Text = "Chỉ số TDEE của bạn là  " + TDEE.ToString("F0") + " calo/ngày";
-            
         }
 
         private void label37_Click(object sender, EventArgs e)
@@ -308,10 +319,6 @@ namespace Test_1
 
         }
 
-        private void vbButton2_Click(object sender, EventArgs e)
-        {
-            
-        }
 
         private void label27_Click(object sender, EventArgs e)
         {
@@ -319,19 +326,13 @@ namespace Test_1
         }
 
 
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void label36_Click(object sender, EventArgs e)
         {
 
         }
-
-        private void Form1_Load(object sender, EventArgs e)
+        private void Calculation_Load(object sender, EventArgs e)
         {
-
+   
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

@@ -9,17 +9,38 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Test_1
 {
     public partial class FnDButton : Form
     {
+        Form1 f = null;
         public FnDButton()
         {
             InitializeComponent();
+            //f = new Form1();
 
         }
         private Form currentFormchild;
+
+
+        //private void OpenchildForm(Form ChildForm)
+        //{
+        //    if (currentFormchild != null)
+        //    {
+        //        currentFormchild.Hide();
+        //    }
+        //    currentFormchild = ChildForm;
+        //    ChildForm.TopLevel = false;
+        //    ChildForm.FormBorderStyle = FormBorderStyle.None; // đóng dấu x và mở rộng của form con
+        //    ChildForm.Dock = DockStyle.Fill;
+        //    panelBody1.Controls.Add(ChildForm);
+        //    panelBody1.Tag = ChildForm;
+        //    ChildForm.BringToFront();
+        //    ChildForm.Show();
+        //}
+
 
         private void nhatKy_Click(object sender, EventArgs e)
         {
@@ -48,6 +69,7 @@ namespace Test_1
 
         private void FnDButton_Load(object sender, EventArgs e)
         {
+            //f = new Form1();
         }
 
         private void ThucDon_Click(object sender, EventArgs e)
@@ -56,7 +78,7 @@ namespace Test_1
             Panel parentPanel = (Panel)currentForm.Parent;
 
             // Tạo một thể hiện của Form2
-           MoreMenu moremenu = new MoreMenu();
+            MoreMenu moremenu = new MoreMenu();
 
             // Thiết lập Parent của FnDbutton là panel
             moremenu.TopLevel = false;
@@ -64,7 +86,7 @@ namespace Test_1
             moremenu.FormBorderStyle = FormBorderStyle.None; // đóng dấu x và mở rộng của form con
             moremenu.Dock = DockStyle.Fill;
 
-            // Đặt kích thước và vị trí của Form2 để nó đè chính xác lên form hiện tại
+            //// Đặt kích thước và vị trí của Form2 để nó đè chính xác lên form hiện tại
             moremenu.Size = currentForm.Size;
             moremenu.Location = currentForm.Location;
             currentForm.Hide();

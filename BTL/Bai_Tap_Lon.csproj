@@ -108,13 +108,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ThucDon.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ThucDon.Designer.cs">
-      <DependentUpon>ThucDon.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Thuc_don.cs" />
+    <Compile Include="ThucDon.cs" />
     <Compile Include="VanDong.cs">
       <SubType>Form</SubType>
     </Compile>

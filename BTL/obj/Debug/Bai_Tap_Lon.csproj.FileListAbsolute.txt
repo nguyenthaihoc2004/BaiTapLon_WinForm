@@ -42,3 +42,26 @@ D:\Thuy Loi University\Lap trinh Windows\Baitaplon\BaiTapLon_WinForm\BTL\obj\Deb
 D:\Thuy Loi University\Lap trinh Windows\Baitaplon\BaiTapLon_WinForm\BTL\obj\Debug\Test_1.pdb
 D:\Thuy Loi University\Lap trinh Windows\Baitaplon\BaiTapLon_WinForm\BTL\obj\Debug\Vận_động.vanDong.resources
 D:\Thuy Loi University\Lap trinh Windows\Baitaplon\BaiTapLon_WinForm\BTL\obj\Debug\Menu.MoreMenu.resources
+D:\projectC#\BaiTapLon_WinForm\BTL\bin\Debug\Test_1.exe.config
+D:\projectC#\BaiTapLon_WinForm\BTL\bin\Debug\Test_1.exe
+D:\projectC#\BaiTapLon_WinForm\BTL\bin\Debug\Test_1.pdb
+D:\projectC#\BaiTapLon_WinForm\BTL\bin\Debug\CircularProgressBar.dll
+D:\projectC#\BaiTapLon_WinForm\BTL\bin\Debug\FontAwesome.Sharp.dll
+D:\projectC#\BaiTapLon_WinForm\BTL\bin\Debug\WinFormAnimation.dll
+D:\projectC#\BaiTapLon_WinForm\BTL\bin\Debug\CircularProgressBar.xml
+D:\projectC#\BaiTapLon_WinForm\BTL\obj\Debug\Bai_Tap_Lon.csproj.AssemblyReference.cache
+D:\projectC#\BaiTapLon_WinForm\BTL\obj\Debug\Test_1.Calculation.resources
+D:\projectC#\BaiTapLon_WinForm\BTL\obj\Debug\Macro.FoodnDrink.resources
+D:\projectC#\BaiTapLon_WinForm\BTL\obj\Debug\Test_1.Form1.resources
+D:\projectC#\BaiTapLon_WinForm\BTL\obj\Debug\Test_1.Macro.resources
+D:\projectC#\BaiTapLon_WinForm\BTL\obj\Debug\Test_1.FnDButton.resources
+D:\projectC#\BaiTapLon_WinForm\BTL\obj\Debug\Test_1.MacroButton.resources
+D:\projectC#\BaiTapLon_WinForm\BTL\obj\Debug\Menu.MoreMenu.resources
+D:\projectC#\BaiTapLon_WinForm\BTL\obj\Debug\Test_1.Properties.Resources.resources
+D:\projectC#\BaiTapLon_WinForm\BTL\obj\Debug\Vận_động.vanDong.resources
+D:\projectC#\BaiTapLon_WinForm\BTL\obj\Debug\Test_1.Welcome.resources
+D:\projectC#\BaiTapLon_WinForm\BTL\obj\Debug\Bai_Tap_Lon.csproj.GenerateResource.cache
+D:\projectC#\BaiTapLon_WinForm\BTL\obj\Debug\Bai_Tap_Lon.csproj.CoreCompileInputs.cache
+D:\projectC#\BaiTapLon_WinForm\BTL\obj\Debug\Bai_Tap_Lon.csproj.CopyComplete
+D:\projectC#\BaiTapLon_WinForm\BTL\obj\Debug\Test_1.exe
+D:\projectC#\BaiTapLon_WinForm\BTL\obj\Debug\Test_1.pdb

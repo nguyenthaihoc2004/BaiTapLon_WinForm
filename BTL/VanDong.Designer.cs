@@ -60,58 +60,63 @@
             // 
             this.van_dong.AutoSize = true;
             this.van_dong.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.van_dong.Location = new System.Drawing.Point(476, 9);
+            this.van_dong.Location = new System.Drawing.Point(714, 16);
+            this.van_dong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.van_dong.Name = "van_dong";
-            this.van_dong.Size = new System.Drawing.Size(150, 41);
+            this.van_dong.Size = new System.Drawing.Size(240, 66);
             this.van_dong.TabIndex = 0;
             this.van_dong.Text = "Vận động";
             // 
             // walk
             // 
-            this.walk.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.walk.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.walk.AutoSize = true;
             this.walk.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.walk.Location = new System.Drawing.Point(3, 62);
+            this.walk.Location = new System.Drawing.Point(4, 112);
+            this.walk.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.walk.Name = "walk";
-            this.walk.Size = new System.Drawing.Size(194, 24);
+            this.walk.Size = new System.Drawing.Size(292, 39);
             this.walk.TabIndex = 1;
             this.walk.Text = "Thời gian vận động";
             this.walk.Click += new System.EventHandler(this.walk_Click);
             // 
             // trackBar_walk
             // 
-            this.trackBar_walk.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.trackBar_walk.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.trackBar_walk.LargeChange = 1;
-            this.trackBar_walk.Location = new System.Drawing.Point(203, 65);
+            this.trackBar_walk.Location = new System.Drawing.Point(304, 118);
+            this.trackBar_walk.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.trackBar_walk.Maximum = 180;
             this.trackBar_walk.Name = "trackBar_walk";
-            this.trackBar_walk.Size = new System.Drawing.Size(256, 56);
+            this.trackBar_walk.Size = new System.Drawing.Size(385, 90);
             this.trackBar_walk.TabIndex = 2;
             this.trackBar_walk.Scroll += new System.EventHandler(this.trackBar_walk_Scroll);
             // 
             // jump_rope
             // 
-            this.jump_rope.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.jump_rope.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.jump_rope.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.jump_rope, 2);
             this.jump_rope.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.jump_rope.Location = new System.Drawing.Point(3, 0);
+            this.jump_rope.Location = new System.Drawing.Point(4, 0);
+            this.jump_rope.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.jump_rope.Name = "jump_rope";
-            this.jump_rope.Size = new System.Drawing.Size(456, 29);
+            this.jump_rope.Size = new System.Drawing.Size(685, 46);
             this.jump_rope.TabIndex = 10;
             this.jump_rope.Text = "Tên môn thể thao: \r\n";
             // 
             // textBox1
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(465, 65);
+            this.textBox1.Location = new System.Drawing.Point(697, 118);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(124, 31);
+            this.textBox1.Size = new System.Drawing.Size(187, 53);
             this.textBox1.TabIndex = 15;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -122,14 +127,15 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(610, 54);
+            this.chart1.Location = new System.Drawing.Point(915, 97);
+            this.chart1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(467, 246);
+            this.chart1.Size = new System.Drawing.Size(700, 445);
             this.chart1.TabIndex = 23;
             this.chart1.Text = "Biểu đồ vận động trong 7 ngày ";
             this.chart1.Click += new System.EventHandler(this.chart1_Click);
@@ -137,11 +143,12 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 309);
+            this.dataGridView1.Location = new System.Drawing.Point(18, 560);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(472, 340);
+            this.dataGridView1.Size = new System.Drawing.Size(708, 616);
             this.dataGridView1.TabIndex = 24;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -149,29 +156,32 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 124);
+            this.label1.Location = new System.Drawing.Point(4, 224);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(182, 24);
+            this.label1.Size = new System.Drawing.Size(286, 39);
             this.label1.TabIndex = 25;
             this.label1.Text = "Lượng calo tiêu thụ: ";
             // 
             // textBox2
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(203, 127);
+            this.textBox2.Location = new System.Drawing.Point(304, 230);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(256, 31);
+            this.textBox2.Size = new System.Drawing.Size(385, 53);
             this.textBox2.TabIndex = 26;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(465, 189);
+            this.button1.Location = new System.Drawing.Point(697, 342);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 57);
+            this.button1.Size = new System.Drawing.Size(186, 102);
             this.button1.TabIndex = 27;
             this.button1.Text = "Lưu";
             this.button1.UseVisualStyleBackColor = true;
@@ -181,30 +191,32 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 186);
+            this.label2.Location = new System.Drawing.Point(4, 336);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 24);
+            this.label2.Size = new System.Drawing.Size(212, 39);
             this.label2.TabIndex = 28;
             this.label2.Text = "Môn thể thao: ";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBox3
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Location = new System.Drawing.Point(203, 189);
+            this.textBox3.Location = new System.Drawing.Point(304, 342);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(256, 31);
+            this.textBox3.Size = new System.Drawing.Size(385, 53);
             this.textBox3.TabIndex = 29;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 300F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 195F));
             this.tableLayoutPanel1.Controls.Add(this.jump_rope, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.button1, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.textBox3, 1, 3);
@@ -214,14 +226,15 @@
             this.tableLayoutPanel1.Controls.Add(this.textBox2, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.trackBar_walk, 1, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 54);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(18, 97);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(592, 249);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(888, 451);
             this.tableLayoutPanel1.TabIndex = 30;
             // 
             // dataGridView2
@@ -232,11 +245,12 @@
             this.name_set,
             this.time_set,
             this.calo_set});
-            this.dataGridView2.Location = new System.Drawing.Point(490, 309);
+            this.dataGridView2.Location = new System.Drawing.Point(735, 560);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(586, 339);
+            this.dataGridView2.Size = new System.Drawing.Size(879, 615);
             this.dataGridView2.TabIndex = 31;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
@@ -268,18 +282,20 @@
             this.calo_set.MinimumWidth = 6;
             this.calo_set.Name = "calo_set";
             // 
-            // Form1
+            // vanDong
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1084, 661);
+            this.ClientSize = new System.Drawing.Size(1626, 1198);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.van_dong);
-            this.Name = "Form1";
+            this.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.Name = "vanDong";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar_walk)).EndInit();

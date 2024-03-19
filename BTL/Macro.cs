@@ -9,11 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Documents;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
+using System.Data.SqlClient;
 
 namespace Test_1
 {
     public partial class Macro : Form
     {
+        Form1 f = null;
+        private SqlConnection conn;
         private void ControlEnable(bool check)
         {
             trackBar1.Enabled = check;
@@ -34,10 +37,11 @@ namespace Test_1
         public Macro()
         {
             InitializeComponent();
+            f = new Form1();
+            conn = f.GetConnection();
             List<CheDoAn> ds = new List<CheDoAn>();
             cbbTuychon.DisplayMember = "Ten";
             cbbTuychon.ValueMember = "Ten"; // Chỉ định Ten làm giá trị cho mục được chọn
-
             cbbTuychon.DataSource = ds;
         }
 

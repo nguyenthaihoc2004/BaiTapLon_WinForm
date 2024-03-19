@@ -3,8 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -16,7 +18,9 @@ namespace Macro
 {
     public partial class FoodnDrink : Form
     {
-        string cellValue, Weight;
+        private SqlConnection conn;
+        Form1 f = null;
+        string cellValue, Weight, dailycell;
         double weightValue = 0;
         int Skcal = 0;
         int TDEE = 2500;
@@ -25,9 +29,11 @@ namespace Macro
         public FoodnDrink()
         {
             InitializeComponent();
+            f = new Form1();    
+            conn = f.GetConnection();
         }
-
-
+        
+        SqlDataAdapter adt = new SqlDataAdapter();
         List<ThucDon> dsTd = new List<ThucDon>();
 
         //Hàm xử lý tràn ở các thanh process
@@ -58,65 +64,46 @@ namespace Macro
             circularProgressBar1.Update();
             // Tạo một DataTable để chứa dữ liệu
             DataTable Menu = new DataTable();
-            Menu.Columns.Add("Tên", typeof(string));
-            Menu.Columns.Add("Khối lượng", typeof(double));
-            Menu.Columns.Add("Loại", typeof(string));
-
-
-            //Thêm dữ liệu vào datagridView
-            dsTd.Add(new ThucDon() { Name = "Ức gà", Loai = "Thịt", carb = 20, fat = 8.6, Kl = 100, pro = 26.8, Calories = 216 });
-            dsTd.Add(new ThucDon() { Name = "Cá hồi", Loai = "Cá", carb = 12, fat = 11.6, Kl = 100, pro = 32, Calories = 312 });
-            dsTd.Add(new ThucDon() { Name = "Thịt lợn", Loai = "Thịt", carb = 25, fat = 12.5, Kl = 100, pro = 18, Calories = 300 });
-            dsTd.Add(new ThucDon() { Name = "Rau cải", Loai = "Rau", carb = 3.6, fat = 0.8, Kl = 20, pro = 1.8, Calories = 12 });
-            dsTd.Add(new ThucDon() { Name = "Táo đỏ", Loai = "Hoa quả", carb = 12, fat = 2.4, Kl = 100, pro = 6.7, Calories = 43 });
-            foreach (ThucDon monan in dsTd)
-            {
-                Menu.Rows.Add(monan.Name, monan.Kl, monan.Loai);
-            }
-            // thêm giá trị mặc định cho biểu đồ lúc mở form
-            dtMenu.DataSource = Menu;
             labelchart.Text = "0 Calo";
             chart1.Series["Series1"].Points.AddXY("Carbs", 33.3);
             chart1.Series["Series1"].Points.AddXY("Fat", 33.3);
             chart1.Series["Series1"].Points.AddXY("Proteins", 100 - 66.6);
+
+            // chọn hết bảng để thêm dữ liệu vào danh sách
+            string query = string.Format("SELECT * FROM Menu");
+            adt = new SqlDataAdapter(query, conn);
+            adt.Fill(Menu);
+            //xóa hết dữ liệu mỗi lần loadForm để không trùng lặp dữ liệu
+            dsTd.Clear();
+            // thêm các  giá trị từ sql vào danh sách
+            foreach (DataRow row in Menu.Rows)
+            {
+                // Tạo một đối tượng ThucDon từ giá trị của mỗi dòng
+                ThucDon td = new ThucDon();
+
+                // Thiết lập các thuộc tính của đối tượng ThucDon từ giá trị của từng cột trong DataRow
+                td.Name = row["Ten"].ToString();
+                td.Loai = row["Loai"].ToString();
+                td.Calories = Convert.ToInt32(row["Calo"]);
+                td.carb = Convert.ToDouble(row["Carbs"]);
+                td.fat = Convert.ToDouble(row["Fat"]);
+                td.pro = Convert.ToDouble(row["Protein"]);
+                td.Kl = Convert.ToDouble(row["KhoiLuong"]);
+                td.nutrients = row["Chatddkhac"].ToString();
+                dsTd.Add(td);
+            }
+
+            //chọn 3 cột để show lên
+            query = string.Format("SELECT Ten, Loai, KhoiLuong FROM Menu");
+            adt = new SqlDataAdapter(query, conn);
+            DataTable Menu2 = new DataTable();
+            adt.Fill(Menu2);
+            dtMenu.DataSource = Menu2;
         }
 
         private void circularProgressBar1_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-            Form currentForm1 = this;
-            Panel parentPanel1 = (Panel)currentForm1.Parent;
-
-            // Tạo một thể hiện của Form2
-            FnDButton fnDButton = new FnDButton();
-
-            // Thiết lập Parent của Form2 là panel
-            fnDButton.TopLevel = false;
-            fnDButton.Parent = parentPanel1;
-            fnDButton.FormBorderStyle = FormBorderStyle.None; // đóng dấu x và mở rộng của form con
-            fnDButton.Dock = DockStyle.Fill;
-
-            // Đặt kích thước và vị trí của Form2 để nó đè chính xác lên form hiện tại
-            fnDButton.Size = currentForm1.Size;
-            fnDButton.Location = currentForm1.Location;
-            currentForm1.Hide();
-            // Hiển thị Form2 và ẩn form hiện tại
-            fnDButton.Show();
-        }
-
-        private void dtMenu_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            //Bắt sự kiện click vào datagridview để chọn món ăn
-            if (e.ColumnIndex >= 0 && e.RowIndex >= 0)
-            {
-                DataGridViewCell selectedCell = dtMenu.Rows[e.RowIndex].Cells[0];
-                cellValue = selectedCell.Value.ToString();
-                //MessageBox.Show(cellValue);
-            }
         }
 
         private void trackBar1_Scroll(object sender, EventArgs e)
@@ -131,84 +118,81 @@ namespace Macro
         {
             dtDaily.Enabled = btnEdit.Enabled = btnEra.Enabled = textBox1.Enabled = textBox2.Enabled = btnSearch.Enabled = true;
             textBox3.Enabled = trackBar1.Enabled = dtMenu.Enabled = btnHuy.Enabled = btnSave.Enabled = true;
-            double c = 0, p = 0, f = 0; // Gán giá trị mặc định cho biến c, p, f
-            int kcal = 0;
-            double W = Convert.ToDouble(Weight);
-            foreach (ThucDon monan in dsTd)
+            if (check == "Add")
             {
-                if (monan.Name == cellValue)
+                double c = 0, p = 0, f = 0; // Gán giá trị mặc định cho biến c, p, f
+                int kcal = 0;
+                double W = Convert.ToDouble(Weight);
+                string Chatdd = "";
+                foreach (ThucDon monan in dsTd)
                 {
-                    c = monan.carb * (W / monan.Kl);
-                    p = monan.pro * (W / monan.Kl);
-                    f = monan.fat * (W / monan.Kl);
-                    kcal = Convert.ToInt32(monan.Calories * (W / monan.Kl));
-                    Skcal += kcal;
+                    if (monan.Name == cellValue)
+                    {
+                        c = monan.carb * (W / monan.Kl);
+                        p = monan.pro * (W / monan.Kl);
+                        f = monan.fat * (W / monan.Kl);
+                        Chatdd = monan.nutrients;
+                        kcal = Convert.ToInt32(monan.Calories * (W / monan.Kl));
+                        Skcal += kcal;
+                    }
                 }
+
+                // update thanh process bar tổng số calo cần nạp
+                int Check = circularProgressBar1.Value + kcal;
+                if (Check <= circularProgressBar1.Maximum)
+                {
+                    circularProgressBar1.Value = Check;
+                }
+                else circularProgressBar1.Value = circularProgressBar1.Maximum;
+                circularProgressBar1.Update();
+
+                //update thanh chỉ số carb, pro, fat
+                XuLyTran(ref progressBar4, c, ref quaC);
+                XuLyTran(ref progressBar3, f, ref quaF);
+                XuLyTran(ref progressBar5, p, ref quaP);
+
+                // update lại label chỉ số
+                label10.Text = quaC.ToString() + "/" + progressBar4.Maximum.ToString() + " Grams";
+                label8.Text = quaF.ToString() + "/" + progressBar3.Maximum.ToString() + " Grams";
+                label11.Text = quaP.ToString() + "/" + progressBar5.Maximum.ToString() + " Grams";
+                labPercent.Text = Skcal.ToString() + "/" + TDEE.ToString();
+                string Nutrients = c.ToString("F1") + " gr carbs" + p.ToString("F1") + " gr pro" + f.ToString("F1") + " gr fat" + Chatdd;
+                dtDaily.Rows.Add(cellValue, W, kcal, Nutrients);
+
+                // xóa hết dữ liệu trên biểu đồ
+                chart1.Series["Series1"].Points.Clear();
+                // cập nhật chart khi chọn thực phẩm
+                //chart1.Series["Series1"].Points.AddXY("Carbs", c);
+                //chart1.Series["Series1"].Points.AddXY("Fat", f);
+                //chart1.Series["Series1"].Points.AddXY("Proteins", p);
+
+                DataPoint carbDataPoint = new DataPoint(0, c);
+                DataPoint fatDataPoint = new DataPoint(1, f);
+                DataPoint proteinDataPoint = new DataPoint(2, p);
+
+                // Thêm các điểm dữ liệu vào chuỗi dữ liệu "Series1"
+                chart1.Series["Series1"].Points.Add(carbDataPoint);
+                chart1.Series["Series1"].Points.Add(fatDataPoint);
+                chart1.Series["Series1"].Points.Add(proteinDataPoint);
+
+                // Thiết lập nhãn cho các điểm dữ liệu
+                //LegendText để thiết lập nội dung hiển thị trong phần chú thích của mỗi điểm dữ liệu.
+                carbDataPoint.LegendText = Convert.ToDouble(c).ToString("F1") + " Carbs";
+                fatDataPoint.LegendText = Convert.ToDouble(f).ToString("F1") + " Fat";
+                proteinDataPoint.LegendText = Convert.ToDouble(p).ToString("F1") + " Proteins";
+
+                //Lưu món ăn đã thêm vào DailyMenu trong data
+                string InsertQuery = string.Format("Insert Into DailyMenu Values (N'{0}', '{1}', N'{2}', '{3}')",
+                    cellValue, W, Nutrients, kcal);
+                SqlCommand Insertcmd = new SqlCommand(InsertQuery, conn);
+                Insertcmd.ExecuteNonQuery();
+
+                //sau khi lưu xong . clear dữ liệu
+                textBox3.Text = "";
             }
-
-            // update thanh process bar tổng số calo cần nạp
-            int Check = circularProgressBar1.Value + kcal;
-            if (Check <= circularProgressBar1.Maximum)
-            {
-                circularProgressBar1.Value = Check;
-            }
-            else circularProgressBar1.Value = circularProgressBar1.Maximum;
-            circularProgressBar1.Update();
-
-            //update thanh chỉ số carb, pro, fat
-            XuLyTran(ref progressBar4, c, ref quaC);
-            XuLyTran(ref progressBar3, f, ref quaF);
-            XuLyTran(ref progressBar5, p, ref quaP);
-
-            // update lại label chỉ số
-            label10.Text = quaC.ToString() + "/" + progressBar4.Maximum.ToString() + " Grams";
-            label8.Text = quaF.ToString() + "/" + progressBar3.Maximum.ToString() + " Grams";
-            label11.Text = quaP.ToString() + "/" + progressBar5.Maximum.ToString() + " Grams";
-            labPercent.Text = Skcal.ToString() + "/" + TDEE.ToString();
-            string Nutrients = c.ToString() + " Grams carbs" + p.ToString() + " Grams proteins" + f.ToString() + " Grams fat";
-            dtDaily.Rows.Add(cellValue, W, kcal, Nutrients);
-
-            // xóa hết dữ liệu trên biểu đồ
-            chart1.Series["Series1"].Points.Clear();
-            // cập nhật chart khi chọn thực phẩm
-            //chart1.Series["Series1"].Points.AddXY("Carbs", c);
-            //chart1.Series["Series1"].Points.AddXY("Fat", f);
-            //chart1.Series["Series1"].Points.AddXY("Proteins", p);
-
-            DataPoint carbDataPoint = new DataPoint(0, c);
-            DataPoint fatDataPoint = new DataPoint(1, f);
-            DataPoint proteinDataPoint = new DataPoint(2, p);
-
-            // Thêm các điểm dữ liệu vào chuỗi dữ liệu "Series1"
-            chart1.Series["Series1"].Points.Add(carbDataPoint);
-            chart1.Series["Series1"].Points.Add(fatDataPoint);
-            chart1.Series["Series1"].Points.Add(proteinDataPoint);
-
-            // Thiết lập nhãn cho các điểm dữ liệu
-            //LegendText để thiết lập nội dung hiển thị trong phần chú thích của mỗi điểm dữ liệu.
-            carbDataPoint.LegendText = Convert.ToDouble(c).ToString("F1") + " Carbs";
-            fatDataPoint.LegendText = Convert.ToDouble(f).ToString("F1") + " Fat";
-            proteinDataPoint.LegendText = Convert.ToDouble(p).ToString("F1") + " Proteins";
         }
 
-        private void labPercent_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void chart1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnEdit_Click(object sender, EventArgs e)
-        {
-            btnAdd0.Enabled = btnEra.Enabled = textBox1.Enabled = textBox2.Enabled = false;
-            btnSearch.Enabled = btnSave.Enabled = false;
-            dtDaily.Enabled = btnSave.Enabled = btnHuy.Enabled = trackBar1.Enabled = textBox3.Enabled = true;
-        }
-
-        private void btnSearch_Click(object sender, EventArgs e)
+        private void btnSearch_Click_1(object sender, EventArgs e)
         {
             //btnAdd.Enabled = btnAdd0.Enabled =
             btnEra.Enabled = btnEdit.Enabled = true;
@@ -218,59 +202,45 @@ namespace Macro
             check = "search";
         }
 
-        private void textBox1_TextChanged_1(object sender, EventArgs e)
-        {
-
-            //dtMenu.Rows.Clear();
-            //dtMenu.Refresh();
-            List<ThucDon> tmp = new List<ThucDon>();
-            string search = textBox1.Text.ToLower();
-            foreach (ThucDon monan in dsTd)
-            {
-                string chuyen = monan.Name.ToLower();
-                if (chuyen.Contains(search))
-                {
-                    tmp.Add(monan);
-                }
-            }
-            foreach (ThucDon monan in tmp)
-            {
-                dtMenu.Rows.Add(monan.Name, monan.Kl, monan.Loai);
-            }
-
-        }
-
-        private void btnSearch_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnEdit_Click_1(object sender, EventArgs e)
         {
-
+            check = "Edit";
+            btnAdd0.Enabled = btnEra.Enabled = textBox1.Enabled = textBox2.Enabled = false;
+            btnSearch.Enabled = btnSave.Enabled = false;
+            dtDaily.Enabled = btnSave.Enabled = btnHuy.Enabled = trackBar1.Enabled = textBox3.Enabled = true;
+            textBox3.Text = dailycell;
         }
 
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        private void dtDaily_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            //Bắt sự kiện click vào datagridview để sửa món ăn
+            if (e.ColumnIndex >= 0 && e.RowIndex >= 0)
+            {
+                DataGridViewCell selectedCell = dtDaily.Rows[e.RowIndex].Cells[1];
+                dailycell = selectedCell.Value.ToString();
+                //MessageBox.Show(cellValue);
+            }
         }
 
-        private void progressBar4_Click(object sender, EventArgs e)
+        private void btnHuy_Click_1(object sender, EventArgs e)
         {
-
-        }
-
-        private void dtMenu_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dtDaily_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
+            textBox1.Text = textBox2.Text = textBox3.Text = "";
+            btnSave.Enabled = btnHuy.Enabled = dtDaily.Enabled = dtMenu.Enabled = trackBar1.Enabled = false;
+            textBox1.Enabled = textBox2.Enabled = textBox3.Enabled = false;
+            btnAdd0.Enabled = btnEdit.Enabled = btnEra.Enabled = btnSearch.Enabled = true;
         
+        }
+
+        private void dtMenu_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            //Bắt sự kiện click vào datagridview để chọn món ăn
+            if (e.ColumnIndex >= 0 && e.RowIndex >= 0)
+            {
+                DataGridViewCell selectedCell = dtMenu.Rows[e.RowIndex].Cells[0];
+                cellValue = selectedCell.Value.ToString();
+                //MessageBox.Show(cellValue);
+            }
+        }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
@@ -305,17 +275,9 @@ namespace Macro
             }
         }
 
-        private void btnHuy_Click(object sender, EventArgs e)
-        {
-            textBox1.Text = textBox2.Text = textBox3.Text = "";
-            btnSave.Enabled = btnHuy.Enabled = dtDaily.Enabled = dtMenu.Enabled = trackBar1.Enabled = false;
-            textBox1.Enabled = textBox2.Enabled = textBox3.Enabled = false;
-            btnAdd0.Enabled = btnEdit.Enabled = btnEra.Enabled = btnSearch.Enabled = true;
-        }
-
         private void btnAdd0_Click(object sender, EventArgs e)
         {
-            //dtMenu.Rows.Clear();
+            check = "Add";
             dtDaily.Enabled = btnEdit.Enabled = btnEra.Enabled = textBox1.Enabled = textBox2.Enabled = false;
             textBox3.Enabled = trackBar1.Enabled = dtMenu.Enabled = btnHuy.Enabled = btnSave.Enabled = true;
 
