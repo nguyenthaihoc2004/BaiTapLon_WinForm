@@ -10,6 +10,7 @@ using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Documents;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 using Test_1;
@@ -20,7 +21,8 @@ namespace Macro
     {
         private SqlConnection conn;
         Form1 f = null;
-        string cellValue, Weight, dailycell;
+        string cellValue, Weight, dailycell, dailycell2;
+        int CaloXoa;
         double weightValue = 0;
         int Skcal = 0;
         int TDEE = 2500;
@@ -52,6 +54,15 @@ namespace Macro
                 // Xử lý trường hợp giá trị mới vượt quá giá trị tối đa
                 // Hiển thị thông báo hoặc thực hiện các hành động khác tùy theo yêu cầu của ứng dụng
             }
+        }
+
+        private void LoadDaily()
+        {
+            string selectQuery = string.Format("Select  Ten as [Tên món ăn], KL as [Khối lượng], Calories as [Calories], Nutrients as [Chất dinh dưỡng] from DailyMenu ");
+            DataTable Dailymenu = new DataTable();
+            SqlDataAdapter adt = new SqlDataAdapter(selectQuery, conn);
+            adt.Fill(Dailymenu);
+            dtDaily.DataSource = Dailymenu;
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -94,7 +105,7 @@ namespace Macro
             }
 
             //chọn 3 cột để show lên
-            query = string.Format("SELECT Ten, Loai, KhoiLuong FROM Menu");
+            query = string.Format("SELECT Ten As [Tên món ăn], Loai as [Loại], KhoiLuong as[Khối lượng(gr)] FROM Menu");
             adt = new SqlDataAdapter(query, conn);
             DataTable Menu2 = new DataTable();
             adt.Fill(Menu2);
@@ -116,14 +127,14 @@ namespace Macro
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            dtDaily.Enabled = btnEdit.Enabled = btnEra.Enabled = textBox1.Enabled = textBox2.Enabled = btnSearch.Enabled = true;
+            dtDaily.Enabled  = btnEra.Enabled = textBox1.Enabled = textBox2.Enabled = btnSearch.Enabled = true;
             textBox3.Enabled = trackBar1.Enabled = dtMenu.Enabled = btnHuy.Enabled = btnSave.Enabled = true;
+            double c = 0, p = 0, f = 0; // Gán giá trị mặc định cho biến c, p, f
+            int kcal = 0;
+            double W = Convert.ToDouble(Weight);
+            string Chatdd = "";
             if (check == "Add")
             {
-                double c = 0, p = 0, f = 0; // Gán giá trị mặc định cho biến c, p, f
-                int kcal = 0;
-                double W = Convert.ToDouble(Weight);
-                string Chatdd = "";
                 foreach (ThucDon monan in dsTd)
                 {
                     if (monan.Name == cellValue)
@@ -157,14 +168,11 @@ namespace Macro
                 label11.Text = quaP.ToString() + "/" + progressBar5.Maximum.ToString() + " Grams";
                 labPercent.Text = Skcal.ToString() + "/" + TDEE.ToString();
                 string Nutrients = c.ToString("F1") + " gr carbs" + p.ToString("F1") + " gr pro" + f.ToString("F1") + " gr fat" + Chatdd;
-                dtDaily.Rows.Add(cellValue, W, kcal, Nutrients);
+
+               // dtDaily.Rows.Add(cellValue, W, kcal, Nutrients);
 
                 // xóa hết dữ liệu trên biểu đồ
                 chart1.Series["Series1"].Points.Clear();
-                // cập nhật chart khi chọn thực phẩm
-                //chart1.Series["Series1"].Points.AddXY("Carbs", c);
-                //chart1.Series["Series1"].Points.AddXY("Fat", f);
-                //chart1.Series["Series1"].Points.AddXY("Proteins", p);
 
                 DataPoint carbDataPoint = new DataPoint(0, c);
                 DataPoint fatDataPoint = new DataPoint(1, f);
@@ -186,29 +194,59 @@ namespace Macro
                     cellValue, W, Nutrients, kcal);
                 SqlCommand Insertcmd = new SqlCommand(InsertQuery, conn);
                 Insertcmd.ExecuteNonQuery();
-
-                //sau khi lưu xong . clear dữ liệu
-                textBox3.Text = "";
+                LoadDaily();
             }
+            btnHuy.Enabled = btnSave.Enabled = trackBar1.Enabled = textBox3.Enabled = textBox2.Enabled = textBox1.Enabled = false;
+            btnAdd0.Enabled = true;
+            //sau khi lưu xong . clear dữ liệu
+            textBox3.Text = "";
         }
 
         private void btnSearch_Click_1(object sender, EventArgs e)
         {
             //btnAdd.Enabled = btnAdd0.Enabled =
-            btnEra.Enabled = btnEdit.Enabled = true;
+            btnEra.Enabled  = true;
             dtDaily.Enabled = btnSave.Enabled = false;
             //trackBar1.Enabled = textBox3.Enabled = false;
             textBox1.Enabled = textBox2.Enabled = btnHuy.Enabled = dtMenu.Enabled = true;
             check = "search";
         }
 
-        private void btnEdit_Click_1(object sender, EventArgs e)
+        private void btnEra_Click(object sender, EventArgs e)
         {
-            check = "Edit";
-            btnAdd0.Enabled = btnEra.Enabled = textBox1.Enabled = textBox2.Enabled = false;
-            btnSearch.Enabled = btnSave.Enabled = false;
-            dtDaily.Enabled = btnSave.Enabled = btnHuy.Enabled = trackBar1.Enabled = textBox3.Enabled = true;
-            textBox3.Text = dailycell;
+            string EraQuery = string.Format("Delete From DailyMenu where Ten = N'{0}'", dailycell2);
+            SqlCommand eracmd = new SqlCommand(EraQuery,conn);
+            eracmd.ExecuteNonQuery();
+            double c = 0, p = 0, f = 0; // Gán giá trị mặc định cho biến c, p, f
+            int kcal = 0;
+            double W = Convert.ToDouble(dailycell);
+
+            //cập nhật lại dữ liệu ở các phần progress
+            circularProgressBar1.Value -= CaloXoa;
+            circularProgressBar1.Update();
+            foreach (ThucDon monan in dsTd)
+            {
+                if (monan.Name == dailycell2)
+                {
+                    c = monan.carb * (W / monan.Kl);
+                    p = monan.pro * (W / monan.Kl);
+                    f = monan.fat * (W / monan.Kl);
+                }    
+            }
+            progressBar3.Value -= Convert.ToInt32(f);
+            progressBar4.Value -= Convert.ToInt32(c);
+            progressBar5.Value -= Convert.ToInt32(p);
+
+            //cập nhật lại chart
+            chart1.Series["Series1"].Points.Clear();
+            labelchart.Text = "0 Calo";
+            chart1.Series["Series1"].Points.AddXY("Carbs", 33.3);
+            chart1.Series["Series1"].Points.AddXY("Fat", 33.3);
+            chart1.Series["Series1"].Points.AddXY("Proteins", 100 - 66.6);
+
+            //cập nhật lại bảng
+            LoadDaily();
+            MessageBox.Show("Xóa dữ liệu thành công");
         }
 
         private void dtDaily_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -217,8 +255,12 @@ namespace Macro
             if (e.ColumnIndex >= 0 && e.RowIndex >= 0)
             {
                 DataGridViewCell selectedCell = dtDaily.Rows[e.RowIndex].Cells[1];
+                DataGridViewCell selectedCell2 = dtDaily.Rows[e.RowIndex].Cells[0];
+                DataGridViewCell selectedCell3 = dtDaily.Rows[e.RowIndex].Cells[2];
                 dailycell = selectedCell.Value.ToString();
-                //MessageBox.Show(cellValue);
+                dailycell2 = selectedCell2.Value.ToString();
+                CaloXoa = Convert.ToInt32(selectedCell3.Value);
+                //MessageBox.Show(dailycell2);
             }
         }
 
@@ -227,7 +269,7 @@ namespace Macro
             textBox1.Text = textBox2.Text = textBox3.Text = "";
             btnSave.Enabled = btnHuy.Enabled = dtDaily.Enabled = dtMenu.Enabled = trackBar1.Enabled = false;
             textBox1.Enabled = textBox2.Enabled = textBox3.Enabled = false;
-            btnAdd0.Enabled = btnEdit.Enabled = btnEra.Enabled = btnSearch.Enabled = true;
+            btnAdd0.Enabled = btnEra.Enabled = btnSearch.Enabled = true;
         
         }
 
@@ -239,6 +281,10 @@ namespace Macro
                 DataGridViewCell selectedCell = dtMenu.Rows[e.RowIndex].Cells[0];
                 cellValue = selectedCell.Value.ToString();
                 //MessageBox.Show(cellValue);
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn dữ liệu hợp lệ!!");
             }
         }
 
@@ -278,7 +324,7 @@ namespace Macro
         private void btnAdd0_Click(object sender, EventArgs e)
         {
             check = "Add";
-            dtDaily.Enabled = btnEdit.Enabled = btnEra.Enabled = textBox1.Enabled = textBox2.Enabled = false;
+            dtDaily.Enabled  = btnEra.Enabled = textBox1.Enabled = textBox2.Enabled = false;
             textBox3.Enabled = trackBar1.Enabled = dtMenu.Enabled = btnHuy.Enabled = btnSave.Enabled = true;
 
         }

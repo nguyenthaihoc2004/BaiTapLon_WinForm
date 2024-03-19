@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dtMenu = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -52,10 +53,9 @@
             this.textKl = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textCalo = new System.Windows.Forms.TextBox();
-            this.dtMenu = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtMenu)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -67,6 +67,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1656, 548);
             this.panel1.TabIndex = 0;
+            // 
+            // dtMenu
+            // 
+            this.dtMenu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtMenu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtMenu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtMenu.Location = new System.Drawing.Point(0, 0);
+            this.dtMenu.Name = "dtMenu";
+            this.dtMenu.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dtMenu.RowTemplate.Height = 33;
+            this.dtMenu.Size = new System.Drawing.Size(1656, 548);
+            this.dtMenu.TabIndex = 1;
+            this.dtMenu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtMenu_CellClick_1);
             // 
             // label1
             // 
@@ -326,18 +339,6 @@
             this.textCalo.Size = new System.Drawing.Size(287, 47);
             this.textCalo.TabIndex = 23;
             // 
-            // dtMenu
-            // 
-            this.dtMenu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtMenu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtMenu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtMenu.Location = new System.Drawing.Point(0, 0);
-            this.dtMenu.Name = "dtMenu";
-            this.dtMenu.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            this.dtMenu.RowTemplate.Height = 33;
-            this.dtMenu.Size = new System.Drawing.Size(1656, 548);
-            this.dtMenu.TabIndex = 1;
-            // 
             // MoreMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 29F);
@@ -351,9 +352,9 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.MoreMenu_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtMenu)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtMenu)).EndInit();
             this.ResumeLayout(false);
 
         }

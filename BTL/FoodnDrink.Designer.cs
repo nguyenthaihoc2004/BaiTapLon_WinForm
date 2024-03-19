@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.circularProgressBar1 = new CircularProgressBar.CircularProgressBar();
             this.labPercent = new System.Windows.Forms.Label();
             this.progressBar3 = new System.Windows.Forms.ProgressBar();
@@ -53,16 +53,11 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.dtDaily = new System.Windows.Forms.DataGridView();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSave = new System.Windows.Forms.Button();
             this.labelchart = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btnEra = new System.Windows.Forms.Button();
-            this.btnEdit = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -143,7 +138,7 @@
             this.progressBar3.Margin = new System.Windows.Forms.Padding(4);
             this.progressBar3.Maximum = 83;
             this.progressBar3.Name = "progressBar3";
-            this.progressBar3.Size = new System.Drawing.Size(628, 28);
+            this.progressBar3.Size = new System.Drawing.Size(626, 28);
             this.progressBar3.TabIndex = 10;
             // 
             // progressBar4
@@ -155,7 +150,7 @@
             this.progressBar4.Margin = new System.Windows.Forms.Padding(4);
             this.progressBar4.Maximum = 250;
             this.progressBar4.Name = "progressBar4";
-            this.progressBar4.Size = new System.Drawing.Size(628, 28);
+            this.progressBar4.Size = new System.Drawing.Size(626, 28);
             this.progressBar4.TabIndex = 11;
             // 
             // progressBar5
@@ -167,7 +162,7 @@
             this.progressBar5.Margin = new System.Windows.Forms.Padding(4);
             this.progressBar5.Maximum = 188;
             this.progressBar5.Name = "progressBar5";
-            this.progressBar5.Size = new System.Drawing.Size(628, 28);
+            this.progressBar5.Size = new System.Drawing.Size(626, 28);
             this.progressBar5.TabIndex = 12;
             // 
             // dtMenu
@@ -191,19 +186,19 @@
             this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea9.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea9);
-            legend9.Name = "Legend1";
-            this.chart1.Legends.Add(legend9);
+            chartArea8.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea8);
+            legend8.Name = "Legend1";
+            this.chart1.Legends.Add(legend8);
             this.chart1.Location = new System.Drawing.Point(4, 52);
             this.chart1.Margin = new System.Windows.Forms.Padding(4);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series9.Legend = "Legend1";
-            series9.Name = "Series1";
-            this.chart1.Series.Add(series9);
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series8.Legend = "Legend1";
+            series8.Name = "Series1";
+            this.chart1.Series.Add(series8);
             this.chart1.Size = new System.Drawing.Size(630, 396);
             this.chart1.TabIndex = 16;
             this.chart1.Text = "chart1";
@@ -273,10 +268,10 @@
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(527, 196);
+            this.textBox1.Location = new System.Drawing.Point(844, 260);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(310, 47);
+            this.textBox1.Size = new System.Drawing.Size(309, 47);
             this.textBox1.TabIndex = 24;
             // 
             // textBox2
@@ -287,7 +282,7 @@
             this.textBox2.Location = new System.Drawing.Point(527, 260);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(310, 47);
+            this.textBox2.Size = new System.Drawing.Size(309, 47);
             this.textBox2.TabIndex = 25;
             // 
             // label6
@@ -297,10 +292,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(322, 192);
+            this.label6.Location = new System.Drawing.Point(527, 192);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(197, 64);
+            this.label6.Size = new System.Drawing.Size(309, 64);
             this.label6.TabIndex = 26;
             this.label6.Text = "Tìm kiếm theo tên";
             // 
@@ -311,10 +306,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(322, 256);
+            this.label7.Location = new System.Drawing.Point(844, 192);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(197, 64);
+            this.label7.Size = new System.Drawing.Size(309, 64);
             this.label7.TabIndex = 27;
             this.label7.Text = "Tìm kiếm theo loại";
             // 
@@ -324,10 +319,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnHuy.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuy.Location = new System.Drawing.Point(1163, 388);
+            this.btnHuy.Location = new System.Drawing.Point(1161, 388);
             this.btnHuy.Margin = new System.Windows.Forms.Padding(4);
             this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(150, 60);
+            this.btnHuy.Size = new System.Drawing.Size(152, 60);
             this.btnHuy.TabIndex = 33;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
@@ -339,10 +334,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAdd0.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd0.Location = new System.Drawing.Point(845, 260);
+            this.btnAdd0.Location = new System.Drawing.Point(527, 388);
             this.btnAdd0.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd0.Name = "btnAdd0";
-            this.btnAdd0.Size = new System.Drawing.Size(310, 56);
+            this.btnAdd0.Size = new System.Drawing.Size(309, 60);
             this.btnAdd0.TabIndex = 37;
             this.btnAdd0.Text = "Thêm vào nhật kí";
             this.btnAdd0.UseVisualStyleBackColor = true;
@@ -357,7 +352,7 @@
             this.trackBar1.Margin = new System.Windows.Forms.Padding(4);
             this.trackBar1.Maximum = 2000;
             this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(310, 56);
+            this.trackBar1.Size = new System.Drawing.Size(309, 56);
             this.trackBar1.TabIndex = 39;
             this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
@@ -381,10 +376,10 @@
             this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Location = new System.Drawing.Point(845, 324);
+            this.textBox3.Location = new System.Drawing.Point(844, 324);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(310, 47);
+            this.textBox3.Size = new System.Drawing.Size(309, 47);
             this.textBox3.TabIndex = 42;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
@@ -410,11 +405,6 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtDaily.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtDaily.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtDaily.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7});
             this.dtDaily.Location = new System.Drawing.Point(989, 4);
             this.dtDaily.Margin = new System.Windows.Forms.Padding(4);
             this.dtDaily.Name = "dtDaily";
@@ -423,30 +413,6 @@
             this.dtDaily.Size = new System.Drawing.Size(978, 528);
             this.dtDaily.TabIndex = 44;
             this.dtDaily.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtDaily_CellClick);
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Tên món ăn/ thực phẩm";
-            this.Column4.MinimumWidth = 10;
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Khối lượng đã ăn";
-            this.Column5.MinimumWidth = 10;
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Calories";
-            this.Column6.MinimumWidth = 10;
-            this.Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Các chất dinh dưỡng ";
-            this.Column7.MinimumWidth = 10;
-            this.Column7.Name = "Column7";
             // 
             // btnSave
             // 
@@ -467,7 +433,7 @@
             // 
             this.labelchart.AutoSize = true;
             this.labelchart.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelchart.Location = new System.Drawing.Point(1163, 256);
+            this.labelchart.Location = new System.Drawing.Point(1161, 256);
             this.labelchart.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelchart.Name = "labelchart";
             this.labelchart.Size = new System.Drawing.Size(117, 39);
@@ -481,10 +447,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(1163, 128);
+            this.label8.Location = new System.Drawing.Point(1161, 128);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(150, 64);
+            this.label8.Size = new System.Drawing.Size(152, 64);
             this.label8.TabIndex = 28;
             this.label8.Text = "Grams";
             // 
@@ -495,10 +461,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(1163, 320);
+            this.label9.Location = new System.Drawing.Point(1161, 320);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(150, 64);
+            this.label9.Size = new System.Drawing.Size(152, 64);
             this.label9.TabIndex = 40;
             this.label9.Text = "Grams";
             // 
@@ -507,29 +473,15 @@
             this.btnEra.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEra.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEra.Location = new System.Drawing.Point(845, 388);
+            this.btnEra.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEra.Location = new System.Drawing.Point(844, 388);
             this.btnEra.Margin = new System.Windows.Forms.Padding(4);
             this.btnEra.Name = "btnEra";
-            this.btnEra.Size = new System.Drawing.Size(310, 60);
+            this.btnEra.Size = new System.Drawing.Size(309, 60);
             this.btnEra.TabIndex = 34;
             this.btnEra.Text = "Xóa";
             this.btnEra.UseVisualStyleBackColor = true;
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEdit.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.Location = new System.Drawing.Point(527, 388);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(4);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(310, 60);
-            this.btnEdit.TabIndex = 35;
-            this.btnEdit.Text = "Sửa";
-            this.btnEdit.UseVisualStyleBackColor = true;
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click_1);
+            this.btnEra.Click += new System.EventHandler(this.btnEra_Click);
             // 
             // label10
             // 
@@ -538,10 +490,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(1163, 0);
+            this.label10.Location = new System.Drawing.Point(1161, 0);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(150, 64);
+            this.label10.Size = new System.Drawing.Size(152, 64);
             this.label10.TabIndex = 30;
             this.label10.Text = "Grams";
             // 
@@ -552,10 +504,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(1163, 64);
+            this.label11.Location = new System.Drawing.Point(1161, 64);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(150, 64);
+            this.label11.Size = new System.Drawing.Size(152, 64);
             this.label11.TabIndex = 31;
             this.label11.Text = "Grams";
             // 
@@ -569,14 +521,12 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 205F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33223F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33223F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 157F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 158F));
             this.tableLayoutPanel3.Controls.Add(this.trackBar1, 2, 5);
             this.tableLayoutPanel3.Controls.Add(this.labelchart, 4, 4);
             this.tableLayoutPanel3.Controls.Add(this.textBox3, 3, 5);
             this.tableLayoutPanel3.Controls.Add(this.progressBar4, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.textBox2, 2, 4);
-            this.tableLayoutPanel3.Controls.Add(this.btnAdd0, 3, 4);
-            this.tableLayoutPanel3.Controls.Add(this.textBox1, 2, 3);
             this.tableLayoutPanel3.Controls.Add(this.label8, 4, 2);
             this.tableLayoutPanel3.Controls.Add(this.label10, 4, 0);
             this.tableLayoutPanel3.Controls.Add(this.label11, 4, 1);
@@ -585,17 +535,18 @@
             this.tableLayoutPanel3.Controls.Add(this.progressBar3, 2, 2);
             this.tableLayoutPanel3.Controls.Add(this.label2, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.label12, 1, 5);
-            this.tableLayoutPanel3.Controls.Add(this.label6, 1, 3);
-            this.tableLayoutPanel3.Controls.Add(this.label7, 1, 4);
             this.tableLayoutPanel3.Controls.Add(this.label9, 4, 5);
             this.tableLayoutPanel3.Controls.Add(this.btnHuy, 4, 6);
             this.tableLayoutPanel3.Controls.Add(this.btnEra, 3, 6);
-            this.tableLayoutPanel3.Controls.Add(this.btnEdit, 2, 6);
             this.tableLayoutPanel3.Controls.Add(this.btnSave, 1, 6);
             this.tableLayoutPanel3.Controls.Add(this.btnSearch, 0, 6);
             this.tableLayoutPanel3.Controls.Add(this.panel1, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.progressBar5, 2, 1);
             this.tableLayoutPanel3.Controls.Add(this.label5, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnAdd0, 2, 6);
+            this.tableLayoutPanel3.Controls.Add(this.textBox1, 3, 4);
+            this.tableLayoutPanel3.Controls.Add(this.label6, 2, 3);
+            this.tableLayoutPanel3.Controls.Add(this.label7, 3, 3);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 4);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -759,15 +710,10 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.DataGridView dtDaily;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label labelchart;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnEra;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;

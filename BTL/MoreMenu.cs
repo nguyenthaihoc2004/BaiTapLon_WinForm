@@ -85,7 +85,7 @@ namespace Menu
         {
             dtMenu.Enabled =  textCarbs.Enabled = textPro.Enabled = textfat.Enabled = textTen.Enabled = textDD.Enabled = textLoai.Enabled = true;
             btnCancel.Enabled = btnSave.Enabled = textKl.Enabled = textDD.Enabled = textCalo.Enabled = true;
-            btnEdit.Enabled = btnEdit.Enabled = btnEra.Enabled = false;
+            btnEdit.Enabled = btnEdit.Enabled = btnEra.Enabled =btnSearch.Enabled = false;
             check = "Add";
         }
 
@@ -103,20 +103,8 @@ namespace Menu
             btnSave.Enabled = false;
             check = "Search";
         }
-        private void dtMenu_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.ColumnIndex >= 0 && e.RowIndex >= 0)
-            {
-                DataGridViewCell selectedCell = dtMenu.Rows[e.RowIndex].Cells[1];
-                cellValue = selectedCell.Value.ToString();
-                //MessageBox.Show(cellValue);
-            }
-            else
-            {
-                MessageBox.Show("Vui lòng chọn dữ liệu hợp lệ!!");
-                return;
-            }
-        }
+
+  
         private void btnEdit_Click(object sender, EventArgs e)
         {
             check = "Edit";
@@ -146,6 +134,7 @@ namespace Menu
             SqlCommand EraCmd = new SqlCommand(Eraquery, conn);
             EraCmd.ExecuteNonQuery();
             LoadData();
+            MessageBox.Show("Xóa dữ liệu thành công");
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -165,6 +154,7 @@ namespace Menu
                         SqlCommand cmdInsert = new SqlCommand(query1, conn);
                         cmdInsert.ExecuteNonQuery();
                         LoadData();
+                        MessageBox.Show("Thêm thực phầm thành công");
                     }
                     else
                     {
@@ -192,6 +182,7 @@ namespace Menu
                         SqlCommand EditCmd = new SqlCommand(EditQuery, conn);
                         EditCmd.ExecuteNonQuery();
                         LoadData();
+                        MessageBox.Show("Sửa dữ liệu thực phầm thành công");
                     }
                     else
                     {
@@ -203,7 +194,11 @@ namespace Menu
                     MessageBox.Show("Vui lòng nhập Đầy đủ dữ liệu"); return;
                 }
             }
+            // sau khi lưu thì clear text 
             ClearText();
+            btnSave.Enabled = btnCancel.Enabled = false;
+            btnAdd.Enabled = btnEdit.Enabled = btnEra.Enabled = true;
+            
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -229,19 +224,38 @@ namespace Menu
         // xử lý tìm kiếm theo tên
         private void textTen_TextChanged(object sender, EventArgs e)
         {
-            //List<ThucDon> FindList = new List<ThucDon>();
-            //string TenMon = textTen.Text;
-            //foreach (ThucDon monan in Menus)
-            //{
-            //    string tmp = monan.Name.ToLower();
-            //    TenMon.ToLower();
-            //    if (tmp.Contains(TenMon))
-            //    {
-            //        FindList.Add(monan);
-            //    }
-            //}
-            //dt.Clear();
-            //dtMenu.DataSource = FindList;
+            if(check == "Search")
+            {
+                List<ThucDon> FindList = new List<ThucDon>();
+                string TenMon = textTen.Text;
+                foreach (ThucDon monan in Menus)
+                {
+                    string tmp = monan.Name.ToLower();
+                    TenMon.ToLower();
+                    if (tmp.Contains(TenMon))
+                    {
+                        FindList.Add(monan);
+                    }
+                }
+                dt.Clear();
+                dtMenu.DataSource = null;
+                dtMenu.DataSource = FindList;
+            }
+        }
+
+        private void dtMenu_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex >= 0 && e.RowIndex >= 0)
+            {
+                DataGridViewCell selectedCell = dtMenu.Rows[e.RowIndex].Cells[1];
+                cellValue = selectedCell.Value.ToString();
+                //MessageBox.Show(cellValue);
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn dữ liệu hợp lệ!!");
+                return;
+            }
         }
     }
 }
