@@ -31,15 +31,49 @@ namespace Macro
         string check = "";
         int quaC = 0, quaP = 0, quaF = 0;
         DataTable Menu = new DataTable();
+        SqlDataAdapter adt = new SqlDataAdapter();
+        List<ThucDon> dsTd = new List<ThucDon>();
         public FoodnDrink()
         {
             InitializeComponent();
-            f = new Form1();    
+            f = new Form1();
             conn = f.GetConnection();
+            //labPercent.Text = TDEE.ToString();
+            //circularProgressBar1.Minimum = 0;
+            //circularProgressBar1.Maximum = TDEE;
+            //circularProgressBar1.Value = 0;
+            //circularProgressBar1.Update();
+            //// Tạo một DataTable để chứa dữ liệu
+            //labelchart.Text = "0 Calo";
+            //chart1.Series["Series1"].Points.AddXY("Carbs", 33.3);
+            //chart1.Series["Series1"].Points.AddXY("Fat", 33.3);
+            //chart1.Series["Series1"].Points.AddXY("Proteins", 100 - 66.6);
+
+            //// chọn hết bảng để thêm dữ liệu vào danh sách
+            //string query = string.Format("SELECT * FROM Menu");
+            //adt = new SqlDataAdapter(query, conn);
+            //adt.Fill(Menu);
+            ////xóa hết dữ liệu mỗi lần loadForm để không trùng lặp dữ liệu
+            //dsTd.Clear();
+            //// thêm các  giá trị từ sql vào danh sách
+            //foreach (DataRow row in Menu.Rows)
+            //{
+            //    // Tạo một đối tượng ThucDon từ giá trị của mỗi dòng
+            //    ThucDon td = new ThucDon();
+
+            //    // Thiết lập các thuộc tính của đối tượng ThucDon từ giá trị của từng cột trong DataRow
+            //    td.Name = row["Ten"].ToString();
+            //    td.Loai = row["Loai"].ToString();
+            //    td.Calories = Convert.ToInt32(row["Calo"]);
+            //    td.carb = Convert.ToDouble(row["Carbs"]);
+            //    td.fat = Convert.ToDouble(row["Fat"]);
+            //    td.pro = Convert.ToDouble(row["Protein"]);
+            //    td.Kl = Convert.ToDouble(row["KhoiLuong"]);
+            //    td.nutrients = row["Chatddkhac"].ToString();
+            //    dsTd.Add(td);
+            //}
+            //LoadMenu();
         }
-        
-        SqlDataAdapter adt = new SqlDataAdapter();
-        List<ThucDon> dsTd = new List<ThucDon>();
 
         //Hàm xử lý tràn ở các thanh process
         private void XuLyTran(ref ProgressBar progressBar, double valueToAdd, ref int Qua)
@@ -117,7 +151,7 @@ namespace Macro
 
             //chọn 3 cột để show lên
             LoadMenu();
-           
+
         }
 
         private void circularProgressBar1_Click(object sender, EventArgs e)

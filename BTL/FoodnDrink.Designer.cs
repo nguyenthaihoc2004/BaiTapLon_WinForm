@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.circularProgressBar1 = new CircularProgressBar.CircularProgressBar();
             this.labPercent = new System.Windows.Forms.Label();
             this.progressBar3 = new System.Windows.Forms.ProgressBar();
@@ -134,11 +134,11 @@
             this.progressBar3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel3.SetColumnSpan(this.progressBar3, 2);
-            this.progressBar3.Location = new System.Drawing.Point(526, 132);
+            this.progressBar3.Location = new System.Drawing.Point(525, 132);
             this.progressBar3.Margin = new System.Windows.Forms.Padding(4);
             this.progressBar3.Maximum = 83;
             this.progressBar3.Name = "progressBar3";
-            this.progressBar3.Size = new System.Drawing.Size(626, 28);
+            this.progressBar3.Size = new System.Drawing.Size(624, 28);
             this.progressBar3.TabIndex = 10;
             // 
             // progressBar4
@@ -146,11 +146,11 @@
             this.progressBar4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel3.SetColumnSpan(this.progressBar4, 2);
-            this.progressBar4.Location = new System.Drawing.Point(526, 4);
+            this.progressBar4.Location = new System.Drawing.Point(525, 4);
             this.progressBar4.Margin = new System.Windows.Forms.Padding(4);
             this.progressBar4.Maximum = 250;
             this.progressBar4.Name = "progressBar4";
-            this.progressBar4.Size = new System.Drawing.Size(626, 28);
+            this.progressBar4.Size = new System.Drawing.Size(624, 28);
             this.progressBar4.TabIndex = 11;
             // 
             // progressBar5
@@ -158,11 +158,11 @@
             this.progressBar5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel3.SetColumnSpan(this.progressBar5, 2);
-            this.progressBar5.Location = new System.Drawing.Point(526, 68);
+            this.progressBar5.Location = new System.Drawing.Point(525, 68);
             this.progressBar5.Margin = new System.Windows.Forms.Padding(4);
             this.progressBar5.Maximum = 188;
             this.progressBar5.Name = "progressBar5";
-            this.progressBar5.Size = new System.Drawing.Size(626, 28);
+            this.progressBar5.Size = new System.Drawing.Size(624, 28);
             this.progressBar5.TabIndex = 12;
             // 
             // dtMenu
@@ -186,19 +186,19 @@
             this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(4, 52);
             this.chart1.Margin = new System.Windows.Forms.Padding(4);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chart1.Series.Add(series3);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(630, 396);
             this.chart1.TabIndex = 16;
             this.chart1.Text = "chart1";
@@ -210,7 +210,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(321, 0);
+            this.label1.Location = new System.Drawing.Point(320, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(197, 64);
@@ -225,7 +225,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(321, 64);
+            this.label2.Location = new System.Drawing.Point(320, 64);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(197, 64);
@@ -240,7 +240,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(321, 128);
+            this.label4.Location = new System.Drawing.Point(320, 128);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(197, 64);
@@ -258,7 +258,7 @@
             this.label5.Location = new System.Drawing.Point(4, 0);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(309, 64);
+            this.label5.Size = new System.Drawing.Size(308, 64);
             this.label5.TabIndex = 23;
             this.label5.Text = "Số calo bạn đã nạp";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -268,10 +268,10 @@
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(843, 260);
+            this.textBox1.Location = new System.Drawing.Point(841, 260);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(309, 47);
+            this.textBox1.Size = new System.Drawing.Size(308, 47);
             this.textBox1.TabIndex = 24;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -280,10 +280,10 @@
             this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(526, 260);
+            this.textBox2.Location = new System.Drawing.Point(525, 260);
             this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(309, 47);
+            this.textBox2.Size = new System.Drawing.Size(308, 47);
             this.textBox2.TabIndex = 25;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -294,10 +294,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(526, 192);
+            this.label6.Location = new System.Drawing.Point(525, 192);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(309, 64);
+            this.label6.Size = new System.Drawing.Size(308, 64);
             this.label6.TabIndex = 26;
             this.label6.Text = "Tìm kiếm theo tên";
             // 
@@ -308,10 +308,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(843, 192);
+            this.label7.Location = new System.Drawing.Point(841, 192);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(309, 64);
+            this.label7.Size = new System.Drawing.Size(308, 64);
             this.label7.TabIndex = 27;
             this.label7.Text = "Tìm kiếm theo loại";
             // 
@@ -321,10 +321,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnHuy.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuy.Location = new System.Drawing.Point(1160, 388);
+            this.btnHuy.Location = new System.Drawing.Point(1157, 388);
             this.btnHuy.Margin = new System.Windows.Forms.Padding(4);
             this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(153, 60);
+            this.btnHuy.Size = new System.Drawing.Size(156, 60);
             this.btnHuy.TabIndex = 33;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
@@ -336,10 +336,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAdd0.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd0.Location = new System.Drawing.Point(526, 388);
+            this.btnAdd0.Location = new System.Drawing.Point(525, 388);
             this.btnAdd0.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd0.Name = "btnAdd0";
-            this.btnAdd0.Size = new System.Drawing.Size(309, 60);
+            this.btnAdd0.Size = new System.Drawing.Size(308, 60);
             this.btnAdd0.TabIndex = 37;
             this.btnAdd0.Text = "Thêm vào nhật kí";
             this.btnAdd0.UseVisualStyleBackColor = true;
@@ -350,11 +350,11 @@
             this.trackBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.trackBar1.Location = new System.Drawing.Point(526, 324);
+            this.trackBar1.Location = new System.Drawing.Point(525, 324);
             this.trackBar1.Margin = new System.Windows.Forms.Padding(4);
             this.trackBar1.Maximum = 2000;
             this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(309, 56);
+            this.trackBar1.Size = new System.Drawing.Size(308, 56);
             this.trackBar1.TabIndex = 39;
             this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
@@ -365,7 +365,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(321, 320);
+            this.label12.Location = new System.Drawing.Point(320, 320);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(197, 64);
@@ -378,10 +378,10 @@
             this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Location = new System.Drawing.Point(843, 324);
+            this.textBox3.Location = new System.Drawing.Point(841, 324);
             this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(309, 47);
+            this.textBox3.Size = new System.Drawing.Size(308, 47);
             this.textBox3.TabIndex = 42;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
@@ -422,7 +422,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(321, 388);
+            this.btnSave.Location = new System.Drawing.Point(320, 388);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(197, 60);
@@ -435,7 +435,7 @@
             // 
             this.labelchart.AutoSize = true;
             this.labelchart.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelchart.Location = new System.Drawing.Point(1160, 256);
+            this.labelchart.Location = new System.Drawing.Point(1157, 256);
             this.labelchart.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelchart.Name = "labelchart";
             this.labelchart.Size = new System.Drawing.Size(117, 39);
@@ -449,10 +449,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(1160, 128);
+            this.label8.Location = new System.Drawing.Point(1157, 128);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(153, 64);
+            this.label8.Size = new System.Drawing.Size(156, 64);
             this.label8.TabIndex = 28;
             this.label8.Text = "Grams";
             // 
@@ -463,10 +463,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(1160, 320);
+            this.label9.Location = new System.Drawing.Point(1157, 320);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(153, 64);
+            this.label9.Size = new System.Drawing.Size(156, 64);
             this.label9.TabIndex = 40;
             this.label9.Text = "Grams";
             // 
@@ -476,10 +476,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEra.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEra.Location = new System.Drawing.Point(843, 388);
+            this.btnEra.Location = new System.Drawing.Point(841, 388);
             this.btnEra.Margin = new System.Windows.Forms.Padding(4);
             this.btnEra.Name = "btnEra";
-            this.btnEra.Size = new System.Drawing.Size(309, 60);
+            this.btnEra.Size = new System.Drawing.Size(308, 60);
             this.btnEra.TabIndex = 34;
             this.btnEra.Text = "Xóa";
             this.btnEra.UseVisualStyleBackColor = true;
@@ -492,10 +492,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(1160, 0);
+            this.label10.Location = new System.Drawing.Point(1157, 0);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(153, 64);
+            this.label10.Size = new System.Drawing.Size(156, 64);
             this.label10.TabIndex = 30;
             this.label10.Text = "Grams";
             // 
@@ -506,10 +506,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(1160, 64);
+            this.label11.Location = new System.Drawing.Point(1157, 64);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(153, 64);
+            this.label11.Size = new System.Drawing.Size(156, 64);
             this.label11.TabIndex = 31;
             this.label11.Text = "Grams";
             // 
@@ -523,7 +523,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 205F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33223F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33223F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 163F));
             this.tableLayoutPanel3.Controls.Add(this.trackBar1, 2, 5);
             this.tableLayoutPanel3.Controls.Add(this.labelchart, 4, 4);
             this.tableLayoutPanel3.Controls.Add(this.textBox3, 3, 5);
@@ -576,7 +576,7 @@
             this.btnSearch.Location = new System.Drawing.Point(4, 388);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(309, 60);
+            this.btnSearch.Size = new System.Drawing.Size(308, 60);
             this.btnSearch.TabIndex = 47;
             this.btnSearch.Text = "Tìm kiếm";
             this.btnSearch.UseVisualStyleBackColor = true;

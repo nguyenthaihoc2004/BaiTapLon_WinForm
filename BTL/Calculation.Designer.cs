@@ -227,7 +227,7 @@
             "4. Vận động nhiều (6-7 ngày/tuần)",
             "5. Vận động mạnh ( trên 2 tiếng/ngày)"});
             this.comboBox3.Location = new System.Drawing.Point(304, 348);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(721, 33);
             this.comboBox3.TabIndex = 10;
@@ -274,7 +274,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label41, 0, 13);
             this.tableLayoutPanel1.Controls.Add(this.label42, 0, 15);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 4);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 20;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.878048F));
@@ -311,7 +311,7 @@
             "Nam",
             "Nữ"});
             this.comboBox1.Location = new System.Drawing.Point(304, 4);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(198, 33);
             this.comboBox1.TabIndex = 1;
@@ -341,7 +341,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.trackBar1.LargeChange = 1;
             this.trackBar1.Location = new System.Drawing.Point(306, 49);
-            this.trackBar1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.trackBar1.Margin = new System.Windows.Forms.Padding(6);
             this.trackBar1.Maximum = 2500;
             this.trackBar1.Minimum = 1900;
             this.trackBar1.Name = "trackBar1";
@@ -355,7 +355,7 @@
             // 
             this.trackBar2.LargeChange = 1;
             this.trackBar2.Location = new System.Drawing.Point(306, 135);
-            this.trackBar2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.trackBar2.Margin = new System.Windows.Forms.Padding(6);
             this.trackBar2.Maximum = 300;
             this.trackBar2.Name = "trackBar2";
             this.trackBar2.Size = new System.Drawing.Size(424, 31);
@@ -366,7 +366,7 @@
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(306, 92);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(6);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(196, 31);
             this.textBox3.TabIndex = 53;
@@ -375,7 +375,7 @@
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(306, 178);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(6);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(196, 31);
             this.textBox4.TabIndex = 54;
@@ -384,7 +384,7 @@
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(306, 264);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(6);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(196, 31);
             this.textBox5.TabIndex = 55;
@@ -404,7 +404,7 @@
             this.vbButton1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vbButton1.ForeColor = System.Drawing.Color.White;
             this.vbButton1.Location = new System.Drawing.Point(306, 436);
-            this.vbButton1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.vbButton1.Margin = new System.Windows.Forms.Padding(6);
             this.vbButton1.Name = "vbButton1";
             this.tableLayoutPanel1.SetRowSpan(this.vbButton1, 2);
             this.vbButton1.Size = new System.Drawing.Size(354, 74);
@@ -419,7 +419,7 @@
             this.trackBar3.BackColor = System.Drawing.SystemColors.Control;
             this.trackBar3.LargeChange = 1;
             this.trackBar3.Location = new System.Drawing.Point(306, 221);
-            this.trackBar3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.trackBar3.Margin = new System.Windows.Forms.Padding(6);
             this.trackBar3.Maximum = 250;
             this.trackBar3.Minimum = 1;
             this.trackBar3.Name = "trackBar3";
@@ -931,7 +931,7 @@
             this.tableLayoutPanel3.Controls.Add(this.label24, 0, 14);
             this.tableLayoutPanel3.Controls.Add(this.label26, 1, 15);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(1041, 4);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 21;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
@@ -983,7 +983,7 @@
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 1, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(18, 100);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -998,7 +998,7 @@
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Calculation";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Calculation_Load);

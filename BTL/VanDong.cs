@@ -8,24 +8,31 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Data.SqlClient;
+using Test_1;
 
 namespace Vận_động
 {
     public partial class vanDong : Form
     {
 
-        private DataTable dataTable;
+        private DataTable dt;
+        private SqlConnection conn;
+        Form1 f = null;
         public vanDong()
         {
             InitializeComponent();
             //InitializeDataGridView();
+            f = new Form1();
+            conn = f.GetConnection();
         }
 
         double Calo = 0;
-        double calories = 0;
+        int calories = 0;
         double trackBar_Num = 0;
         double tong = 0;
-
+        string Tentt = "", status = "";
+        int Tg, minute;
         private void UpdateResult()
         {
             // Lấy giá trị từ TrackBar
@@ -43,62 +50,32 @@ namespace Vận_động
 
         }
 
-        private void AddDataToDataGridView(string data)
+        private void Tinh()
         {
-            // Tạo một hàng mới cho DataGridView
-            
-
-        }
-            
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string data = textBox3.Text;
-
-            // Thêm dữ liệu vào DataGridView
-            AddDataToDataGridView(data);
-
+            Calo = Convert.ToDouble(Tg / minute) * calories;
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+
+        private void LoadData()
         {
-            
-            if (e.ColumnIndex >= 0 && e.RowIndex >= 0)
-            {
-                DataGridViewRow selectedRow = dataGridView1.Rows[e.RowIndex];
-                textBox3.Text = selectedRow.Cells[1].Value.ToString();
-                calories = Convert.ToDouble(selectedRow.Cells[2].Value);
-
-            }
+            string query = "Select Ten as [Tên], SoGio as [Thời gian vận động(p)], SoCalo As [Số calo tiêu hao], Ngay as [Ngày] from DailyVD";
+            DataTable dt = new DataTable();
+            SqlDataAdapter adt = new SqlDataAdapter(query, conn);
+            adt.Fill(dt);
+            dtDaily.DataSource = dt;
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
-            button1.Enabled = false;
+            // thay đổi định dạng cucar datetime picker
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            dateTimePicker1.CustomFormat = "dd/MM/yyyy";
+            btnSave.Enabled =  btnCancel.Enabled = dtVD.Enabled = textTen.Enabled = false;
             trackBar_walk.Enabled = false;
-
-            //textBox1.Enabled = textBox2.Enabled = textBox3.Enabled = false;
-            //labPercent.Text = TDEE.ToString();
-            //circularProgressBar1.Minimum = 0;
-            //circularProgressBar1.Maximum = TDEE;
-            //circularProgressBar1.Value = 0;
-            //circularProgressBar1.Update();
-            // Tạo một DataTable để chứa dữ liệu
-            dataTable = new DataTable();
-            dataTable.Columns.Add("Số thứ tự", typeof(double));
-            dataTable.Columns.Add("Tên môn thể thao", typeof(string));
-            dataTable.Columns.Add("Calo/Giờ", typeof(double));
-
-
-            //Thêm dữ liệu vào datagridView
-            dataTable.Rows.Add(1, "Đi bộ", 25);
-            dataTable.Rows.Add(2, "Chạy bộ", 30);
-            dataTable.Rows.Add(3, "Đạp xe", 28);
-            dataTable.Rows.Add(4, "Bơi", 25);
-            dataTable.Rows.Add(5, "Yoga", 30);
-            dataTable.Rows.Add(6, "Plank", 28);
-
-            dataGridView1.DataSource = dataTable;
-            UpdateResult();
+            string query = "Select  Ten as [Tên môn thể thao], Sogio As [Thời gian(p)],  Socalo as [Số calo đốt/tg] From VanDong";
+            SqlDataAdapter adt = new SqlDataAdapter(query,conn);
+            dt = new DataTable();
+            adt.Fill(dt);
+            dtVD.DataSource = dt;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -133,9 +110,9 @@ namespace Vận_động
                         trackBar_walk.Value = calo;
                         // trackBar_Num = Convert.ToDouble(trackBar_walk.Value);
                      
-                        if (!string.IsNullOrEmpty(textBox1.Text) || !string.IsNullOrEmpty(textBox3.Text))
+                        if (!string.IsNullOrEmpty(textBox1.Text) || !string.IsNullOrEmpty(textTen.Text))
                         {
-                            button1.Enabled = true;
+                            btnSave.Enabled = true;
                         }
                     }
                 }
@@ -145,17 +122,12 @@ namespace Vận_động
         private void trackBar_walk_Scroll(object sender, EventArgs e)
         {
             textBox1.Text = trackBar_walk.Value.ToString();
-            UpdateResult();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+            
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(textBox3.Text))
+            if (!string.IsNullOrEmpty(textTen.Text))
             {
                 trackBar_walk.Enabled = true;
             }    
@@ -170,10 +142,68 @@ namespace Vận_động
         {
 
         }
-
-        private void chart1_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
+            btnSave.Enabled = btnCancel.Enabled = true;
+            btnSearch.Enabled = btnEra.Enabled = btnEdit.Enabled = textTen.Enabled = false;
+            dtVD.Enabled = true;
+            status = "Add";
+            trackBar_walk.Enabled = textBox1.Enabled = true;
+        }
 
+        private void dtDaily_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex >= 0 && e.RowIndex >= 0)
+            {
+                DataGridViewCell selectedCell = dtDaily.Rows[e.RowIndex].Cells[1];
+                DataGridViewCell selectedCell1 = dtDaily.Rows[e.RowIndex].Cells[2];
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn dữ liệu hợp lệ");
+            }
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            status = "Edit";
+            dtVD.Enabled = btnAdd.Enabled = btnSearch.Enabled = textTen.Enabled = btnEra.Enabled = false;
+            btnSave.Enabled = btnCancel.Enabled = btnEdit.Enabled = dtDaily.Enabled = trackBar_walk.Enabled = textBox1.Enabled = textBox2.Enabled = true;
+       }
+
+        private void dtVD_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+            if (e.ColumnIndex >= 0 && e.RowIndex >= 0)
+             {
+                DataGridViewCell selectedCell = dtVD.Rows[e.RowIndex].Cells[0];
+                DataGridViewCell selectedCell1 = dtVD.Rows[e.RowIndex].Cells[1];
+                DataGridViewCell selectedCell2 = dtVD.Rows[e.RowIndex].Cells[2];
+                Tentt = selectedCell.Value.ToString();
+                minute = Convert.ToInt32(selectedCell1.Value);
+                calories = Convert.ToInt32(selectedCell1.Value);
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn dữ liệu hợp lệ");
+            }
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            textTen.Enabled = dtDaily.Enabled = btnSave.Enabled = btnCancel.Enabled = false;
+            if(status == "Add")
+            {
+                //đổi kiểu dữ liệu date time để add vào bảng
+                DateTime ngayVd = dateTimePicker1.Value;
+                string Ngay = ngayVd.ToString("yyyy-MM-dd");
+                Tg = Convert.ToInt32(textBox1.Text);
+                Tinh();
+                string insertQuery = string.Format("Insert into Dailyvd values (N'{0}', '{1}' , '{2}', '{3}') ", Tentt, Tg, Convert.ToInt32(Calo),Ngay);
+                SqlCommand Insertcmd = new SqlCommand(insertQuery,conn);
+                Insertcmd.ExecuteNonQuery();
+                LoadData();
+            }
         }
     }
 }
